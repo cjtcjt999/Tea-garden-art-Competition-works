@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/game1.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <title>头脑风暴</title>
+</head>
+
+<body>
+    <div class="tn_container">
+        <img class="container_bk" src="./images/game1/container_bk.png">
+        
+        <div class="tn_header">
+            <a  class="quit_box"href="#"><div><img class="quit"src="images/game1/quit.png"></div></a>
+            <div class="tn_logo"><img src="images/game1/tn_logo.png"></div>
+            <div class="friend_box"><img class="friend"src="images/game1/friend.png"></div>
+            <div class="music_box"><img class="music"src="images/game1/music.png">
+                <img class="xiegang"src="images/game1/xiegang.png">
+            </div>
+        </div>
+        <div class="game_start">
+            <div class="start">
+                <img src="images/game1/start.png">
+            </div>
+        </div>
+        <div class="game_main">
+
+        <div class="touxiang_box">
+            <div class="touxiang">
+                <img src="images/game1/touxiang2.jpg">
+            </div>
+            <div class="player">
+                <p class="player_title">三秒先生</p>
+                <p class="player_level">LV8</p>
+            </div>
+            <img class="sex"src="images/game1/male.png">
+        </div>
+
+
+        <div class="question">
+            <div class="question_count"><p class="count"></p><p>/10</p></div>
+            <div class="question_main">
+                <p class="question_text"></p>
+            </div>
+            <div class="jiexiao">
+                <div class="jiexiao_circle">
+                    <p class="timer"></p>
+                </div>
+                <img class="jiexiao_word"src="images/game1/jiexiao.png">
+            </div>
+            <div class="double_card"><img src="./images/game1/double_card.png"></div>
+        </div>
+
+        <div class="point">
+            0
+            <div class="addpoint">+100</div>
+        </div>
+        
+        <div class="double">
+            <img class="double_score" src="./images/game1/double_score.png">
+            <img class="double_button" src="./images/game1/double_button.png">
+        </div>
+
+        <ul class="options">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        </div>
+        <div class="accounts">
+            <img class="new_record" src="./images/game1/new record.png">
+            <img class="hengfu" src="./images/game1/hengfu.png">
+            <img class="thispoint" src="./images/game1/thispoint.png">
+            <span class="accounts_point"><p class="point_data">300</p>分</span>
+            <div class="top_front">
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang1.jpg">
+                    </div>
+                    <div class="top_name">一秒先生</div>
+                    <div class="top_point"><p class="top_point_data">1200</p></div>
+                    <div class="top_icon"><img src="./images/game1/one.png"></div>
+                </div>
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang2.jpg">
+                    </div>
+                    <div class="top_name">二秒先生</div>
+                    <div class="top_point"><p class="top_point_data">1000</p></div>
+                    <div class="top_icon"><img src="./images/game1/two.png"></div>
+                </div>
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang1.jpg">
+                    </div>
+                    <div class="top_name">三秒先生</div>
+                    <div class="top_point"><p class="top_point_data">900</p></div>
+                    <div class="top_icon"><img src="./images/game1/three.png"></div>
+                </div>
+            </div>
+            <div class="top_behind">
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang2.jpg">
+                    </div>
+                    <div class="top_name">四秒先生</div>
+                    <div class="top_point"><p class="top_point_data">700</p></div>
+                    <div class="top_icon"><img src="./images/game1/four.png"></div>
+                </div>
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang1.jpg">
+                    </div>
+                    <div class="top_name">五秒先生</div>
+                    <div class="top_point"><p class="top_point_data">600</p></div>
+                    <div class="top_icon"><img src="./images/game1/five.png"></div>
+                </div>
+                <div class="top_box">
+                    <div class="top_touxiang">
+                        <img src="./images/game1/touxiang2.jpg">
+                    </div>
+                    <div class="top_name">六秒先生</div>
+                    <div class="top_point"><p class="top_point_data">500</p></div>
+                    <div class="top_icon"><img src="./images/game1/six.png"></div>
+                </div>
+            </div>
+            <div class="myrank">
+                <img class="highest_img" src="images/game1/highest.png">
+                <p class="highest_data">3</p>
+                <img src="images/game1/myrank.png">
+                <p class="myrank_data">12</p>
+            </div>
+            <a href="game1.html"><div class="restart">再来一局<img src="./images/game1/restart.png"></div></a>
+        </div>
+        <div class="leave_mengban">
+            <div class="leave">
+                <div class="leave_title">
+                    <p>你确定要离开本游戏？</p>
+                </div>
+                <div class="leave_option">
+                    <div class="leave_cancel">取消</div>
+                    <a href="teach-prepare.html"><div class="leave_confirm">确定</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic"preload="auto" >
+            <source = src="./images/game1/game_music.mp3" type="audio/mp3">
+    </audio>
+</body>
+<script>
+    /*播放音乐点击事件*/
+    var count=0;
+    $(".music_box").click(function(){
+        if(count%2==0){
+            $(".xiegang").addClass("block");
+        }
+        else{
+            $(".xiegang").removeClass("block");
+        }
+        count++;
+    })
+    var audio1=document.getElementById("bgMusic");
+    /*开始游戏按钮点击事件*/
+    $(".start").click(function(){
+        audio1.play();//背景音乐播放
+        $(".game_main").css({"opacity":"1"});
+        $(".game_start").css({"display":"none"});
+        $(function(){   /*点击后倒计时开始计时*/
+        timer(intDiff);
+        }); 
+    })
+    var mucount=0;
+    $(".music_box").click(function(){//点击右上角关闭音乐按钮暂停音乐
+        if(mucount%2==0){
+            audio1.pause();
+        }
+        else{
+            audio1.play();
+        }
+        mucount++;
+    })
+    /*选项按钮点击事件*/
+    $(".options li").hover(function(){
+        var index=$(this).index();
+        $(".options li").eq(index).css({"transform": "scale(1.03)","background":"rgb(223, 223, 223)"});
+    },function(){
+        $(".options li").css({"transform": "scale(1)","background":"#fff"});
+    })
+
+    /*倒计时函数*/
+    var intDiff = parseInt(15);//倒计时总秒数量
+    function timer(intDiff){
+    var jishi=window.setInterval(function(){
+    var day=0,
+        hour=0,
+        minute=0,
+        second=0;//时间默认值        
+    if(intDiff > 0){
+        day = Math.floor(intDiff / (60 * 60 * 24));
+        hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+        minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+        second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+    }
+    if (minute <= 9) minute = '0' + minute;
+    if (second <= 9) second = '0' + second;
+    $('.timer').html('<s></s>'+second);
+    intDiff--;
+    if(intDiff==-2){
+        $(".game_main").css("opacity","0");
+        setTimeout(function(){
+            $(".game_main").css("display","none");
+        },2000)//游戏主题透明度变为0，过渡时间2s
+
+        $(".accounts").css("display","flex");
+        setTimeout(function(){
+            $(".accounts").css("opacity","1");
+        },10)//结算界面慢慢出现,过渡时间2s；
+       
+    }
+    }, 1000);
+    
+    } 
+
+</script>
+<script>
+    $(".quit_box").click(function(){//点击左上角退出按钮，弹出确认框
+        $(".leave").css("display","block");
+        $(".leave_mengban").css("display","block");
+        setTimeout(function(){
+            $(".leave_mengban").css("opacity","1");
+        },10)
+        $(".leave").addClass("animated zoomIn");
+        $(".leave").removeClass("animated zoomOut");
+    })
+    $(".leave_cancel").click(function(){//点击取消按钮，确认框消失
+        $(".leave").addClass("animated zoomOut");
+        $(".leave").removeClass("animated zoomIn");
+        $(".leave_mengban").css("opacity","0");
+        setTimeout(function(){
+            $(".leave_mengban").css("display","none");
+            $(".leave").css("display","none");
+        },400)
+
+
+    })
+
+    $(".double_button").click(function(){//点击双倍积分按钮，积分卡出现
+        $(".double_card").css("opacity","1");
+        $(".double").css("opacity","0");
+        setTimeout(function(){
+            $(".double").css("display","none");
+            $(".double_card").css({"transform":"scale(1)","left":"10px","bottom":"10px"});
+        },500);
+    })
+
+    
+</script>
+</html>

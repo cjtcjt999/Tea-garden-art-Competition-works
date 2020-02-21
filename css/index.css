@@ -1,0 +1,749 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+html{
+  cursor: url(../images/mouse.png),default;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    margin-right: calc(100vw - 100%);
+    cursor: url(../images/mouse.png),default;
+}
+body::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgb(165, 164, 164);
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(218, 214, 214, 1);
+}
+
+.caidan{
+    position: fixed;
+    width:600px;
+    height:400px;
+    background:#333;
+    color:rgb(206, 206, 206);
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left:-300px;
+    border-radius:15px;
+    text-indent: 30px;
+    z-index:1000000000;
+    display:flex;
+    justify-content: center;
+    padding:10px 10px;
+    overflow: scroll;
+    text-align: justify;
+    display:none;
+    font-size:20px;
+    font-family:华文新魏;
+    line-height:25px;
+    transition: all 2s;
+}
+.caidan::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0px;
+}
+
+.bk{
+    width:100%;
+    height:100vh;
+    /* background-image: url(../images/index/bk.png); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+}
+.video1{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+}
+@keyframes mymove {
+    0% { bottom: 30px;}
+    50%{  bottom: 10px;}
+  100% { bottom: 30px;}
+}
+.down{
+    width:34px;
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    margin-left:-17px;
+    animation:mymove 2s infinite;
+    cursor: pointer;
+
+}
+
+.ball {
+    width: 40px;
+    height: 40px;            
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: border .3s;
+    cursor: pointer;
+}  
+.ball2 {
+    width: 6px;
+    height: 6px;            
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+   
+}
+.town{
+    width:150px;
+    height:30px;
+    color:#fff;
+    font-size: 30px;
+    font-family:华文新魏;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    opacity: 0;
+    transition: all .3s;
+}
+.town2{
+    width:200px;
+    height:30px;
+    color:#fff;
+    font-size: 15px;
+    font-family:华文新魏;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    margin-top:175px;
+    left:50%;
+    margin-left:-100px;
+    opacity: 0;
+    transition: all .4s;
+}
+@keyframes run{
+        from{
+          transform:rotate(0deg);
+        }
+        to{
+           transform:rotate(360deg);
+        }
+    }
+.bk_group{  
+    position: absolute;
+    width:579px;
+    height:607px;
+    top:50%;
+    left:50%;
+    margin-top:-250px;
+    margin-left:-290px;
+    animation:run 200s linear infinite; 
+}
+.group1{
+    position: absolute;
+    left:85%;
+
+}
+.group2{
+    position: absolute;
+    left: 96%;
+    top: 64%;
+}
+.group3{
+    position: absolute;
+    left: 1%;
+    top:3%;
+}
+.group4{
+    position: absolute;
+    left: -7%;
+    top: 80%;
+}
+.group5{
+    position: absolute;
+    left: 58%;
+    top: 98%;
+}
+.group6{
+    position: absolute;
+    left: -6%;
+    top: 48%;
+}
+.group7{
+    position: absolute;
+    left: 60%;
+    top:8%;
+}
+.group8{
+    position: absolute;
+    left: 100%;
+    top: 70%;
+}
+.group9{
+    position: absolute;
+    left: 15%;
+    top: 14%;
+}
+.group10{
+    position: absolute;
+    left: 26%;
+    top: 22%;
+}
+.group11{
+    position: absolute;
+    left: 91%;
+    top: 14%;
+}
+.group12{
+    position: absolute;
+    left: 8%;
+    top: 35%;
+}
+.group13{
+    position: absolute;
+    left: 30%;
+    top: 82%;
+}
+.group14{
+    position: absolute;
+    left: 80%;
+    top: 32%;
+}
+.group15{
+    position: absolute;
+    left: 75%;
+    top: 72%;
+}
+.delta{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-100px;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.index_title{
+    position: absolute;
+    width:250px;
+    height:50px;
+    color:#fff;
+    font-size:45px;
+    top:50%;
+    left:50%;
+    margin-top:-40px;
+    margin-left:-125px;
+    text-align: center;
+    font-family: 华文新魏;
+    transition: all .5s;
+}
+.index_title img{
+    width:200px;
+    height:67px;
+}
+.a1{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.start{
+    width:350px;
+    height:88px;
+    color:rgb(211, 211, 211);
+    font-size: 20px;
+    font-family:华文新魏;
+    line-height: 30px;
+    position: absolute;
+    top:50%;
+    /* margin-top:25px; */
+    margin-top:55px;
+    left:50%;
+    margin-left:-160px;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk_mengban{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-image: url(../images/index/bk_mengban.png);
+    opacity: 0.7;
+}
+
+
+  .csmz_all{
+    width:100%;
+    background:url(../images/index/csmz_back.png);
+    background-size: cover;
+    position: relative;
+    margin-top:100vh;
+  }
+  .csmz{
+    width:1024px;
+    margin:0 auto;
+    position: relative;
+
+    height:4400px;
+    z-index:10;
+  }
+  #gensui{
+    position: absolute;
+    top: 167px;
+    left: 660px;
+    width:25px;
+    height:25px;
+    border-radius:100%;
+    background-image: linear-gradient(25deg, #e55b0d, #e19039, #d5bd60, #bde988);
+    z-index:1000;
+    
+  }
+  .csmz_title{
+    width:100%;
+    height:550px;
+    position: relative;
+    background:#f3f2f1;
+    z-index:10;
+    margin:0 auto;
+  }
+  #svg_title{
+    width:330px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    display:none;
+  }
+  .csmz_word{
+    position: absolute;
+    font-family: '汉标精工';
+    top:220px;
+    left:20%;;
+    font-size:80px;
+    color:#284135 !important;
+    z-index:10;
+    display:flex;
+  }
+
+  .csmz_word2{
+    position: absolute;
+    font-family: '汉标精工';
+    top:330px;
+    left:40%;;
+    font-size:30px;
+    color:#284135 !important;
+    z-index:10;
+    visibility: hidden;
+  }
+  .csmz_word3{
+    position: absolute;
+    font-family: '汉标精工';
+    top:365px;
+    left:50%;;
+    font-size:30px;
+    color:#284135 !important;
+    z-index:10;
+    visibility: hidden;
+  }
+  .csmz_title img{
+    position: absolute;
+    top:130px;
+    right:0;
+    width:85%;
+    height:75%;
+  }
+  .csmz_svg{
+      position: absolute;
+      width:90%;
+      top:100px;
+      left:50%;
+      margin-left:-45%;
+      z-index:20;
+  }
+  .svg_back{
+    position: absolute;
+    width:90.1%;
+    top:100px;
+    left:50%;
+    margin-left:-45.05%;
+    opacity: 0.3;
+    z-index:10;
+  }
+  .svg_back img{
+    width:100%;
+  }
+  .svg_inside{
+    position: absolute;
+    width: 89.7%;
+    top: 983px;
+    left:50%;
+    margin-left:-45.05%;
+    z-index:10;
+  }
+  .svg_inside img{
+    width:100%;
+  }
+  @font-face{
+      font-family: '仓耳今楷';
+      src:url(../fonts/仓耳今楷05\ W05.ttf);
+  }
+  @font-face{
+      font-family: '汉标精工';
+      src:url(../fonts/汉标榜样毛笔楷体.ttf);
+  }
+  .cs1_title{
+    position:absolute;
+    top:210px;
+    font-size:40px;
+    font-family: '汉标精工';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left:8%;
+    z-index:30;
+  }
+  .jiao1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-bottom: 3px solid rgb(59, 59, 59);
+    border-left: 3px solid rgb(59, 59, 59);
+    left:-5px;
+    bottom:3px;
+    transition: all .3s;
+  }
+  .jiao2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid rgb(59, 59, 59);
+    border-right: 3px solid rgb(59, 59, 59);
+    right:-5px;
+    top:3px;
+    transition: all .3s;
+  }
+  .cs1{
+    position: absolute;
+    top:300px;
+    left:8%;
+    width:375px;
+    font-size:27px;
+    line-height:45px;
+    font-family: '汉标精工';
+    color:chocolate;
+    z-index:30;
+    
+  }
+  
+  .cs1_gif{
+    position: absolute;
+    top:520px;
+    left:6%;
+    z-index:30;
+  }
+  .cs1_gif img{
+    width:360px;
+  }
+  .cs2_title{
+    position:absolute;
+    top:710px;
+    font-size:40px;
+    font-family: '汉标精工';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    right:14%;
+    z-index:30;
+  }
+  .cs2{
+    position: absolute;
+    top:800px;
+    right:8%;
+    width:370px;
+    font-size:27px;
+    line-height:45px;
+    font-family: '汉标精工';
+    color:chocolate;
+    z-index:30;
+  }
+  .cs2_gif{
+    position: absolute;
+    top:1020px;
+    right:8%;
+    z-index:30;
+  }
+  .cs2_gif img{
+    width:360px;
+  }
+  .cs3_title{
+    position:absolute;
+    top:1330px;
+    font-size:40px;
+    font-family: '汉标精工';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left:18%;
+    z-index:30;
+  }
+  .cs3{
+    position: absolute;
+    top:1420px;
+    left:18%;
+    width:450px;
+    font-size:27px;
+    line-height:45px;
+    font-family: '汉标精工';
+    color:chocolate;
+    z-index:30;
+  }
+  .cs3_gif{
+    position: absolute;
+    top:1420px;
+    right:2%;
+    z-index:30;
+  }
+  .cs3_gif img{
+    width:360px;
+  }
+  .cs4_title{
+    position:absolute;
+    top:2120px;
+    font-size:40px;
+    font-family: '汉标精工';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left:5%;
+    z-index:30;
+  }
+  .cs4{
+    position: absolute;
+    top:2210px;
+    left:5%;
+    width:390px;
+    font-size:27px;
+    line-height:45px;
+    font-family: '汉标精工';
+    color:chocolate;
+    z-index:30;
+  }
+  .cs4_gif{
+    position: absolute;
+    top:2248px;
+    right:18%;
+    z-index:30;
+  }
+  .cs4_gif img{
+    width:360px;
+  }
+  .cs5_title{
+    position:absolute;
+    top:3050px;
+    font-size:40px;
+    font-family: '汉标精工';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    right:39%;
+    z-index:30;
+  }
+  .cs5{
+    position: absolute;
+    top:3140px;
+    right:8%;
+    width:450px;
+    font-size:27px;
+    line-height:45px;
+    font-family: '汉标精工';
+    color:chocolate;
+    z-index:30;
+  }
+  .cs5_gif{
+    position: absolute;
+    top:3380px;
+    right:18%;
+    z-index:30;
+  }
+  .cs5_gif img{
+    width:360px;
+    z-index:10;
+  }
+  .csmz_img1{
+    width:700px;
+    position: absolute;
+    bottom:0px;
+    left:20%;
+    z-index:1;
+  }
+  .up{
+    position: fixed;
+    bottom:50px;
+    right:-46px;
+    width:46px;
+    height:46px;
+    border-radius:100%;
+    background: linear-gradient(to bottom, #c9d6ff, #e2e2e2);
+    border: 2px solid #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.up img{
+    width:25px;
+}
+
+  /*hover效果*/
+  
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  .sec1,.sec2,.sec3,.sec4,.sec5 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4.875em;
+    font-weight: 900;
+    color: #333;
+  }
+  .sec1:after, .sec1:before,.sec2:after, .sec2:before,.sec3:after, .sec3:before,.sec4:after, .sec4:before,.sec5:after, .sec5:before {
+    content: '';
+  }
+  
+  
+  
+ 
+  .sec1,.sec2,.sec3,.sec4,.sec5 {
+    font-weight: 200;
+    width: 440px;
+    height: 200px;
+    line-height: 200px;
+    position: absolute;
+  }
+  .sec1{
+    top:300px;
+    left:30px;
+  }
+  .sec2{
+    top:800px;
+    right:55px;
+  }
+  .sec3{
+    top:1460px;
+    left:150px;
+  }
+  .sec4{
+    top:2300px;
+    left:10px;
+  }
+  .sec5{
+    top:3180px;
+    right:100px;
+  }
+  .sec1:before,.sec2:before,.sec3:before,.sec4:before,.sec5:before {
+    content: attr(data-content);
+    color: rgba(235, 247, 66, 0.3);
+    transition: all .5s ease-in;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(231, 243, 63, 0.5);
+    padding-top: 50px;
+    -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+    clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+    -webkit-animation: montanhaDaTristeza 0.5s forwards linear;
+    -moz-animation: montanhaDaTristeza 0.5s forwards linear;
+    animation: montanhaDaTristeza 0.5s forwards linear;
+  }
+  /* section.p12 a:hover:before {
+    -webkit-animation: montanhaDaAlegria 0.9s forwards linear;
+    -moz-animation: montanhaDaAlegria 0.9s forwards linear;
+    animation: montanhaDaAlegria 0.9s forwards linear;
+  } */
+  .sec1.change:before,.sec2.change:before,.sec3.change:before,.sec4.change:before,.sec5.change:before {
+    -webkit-animation: montanhaDaAlegria 0.9s forwards linear;
+    -moz-animation: montanhaDaAlegria 0.9s forwards linear;
+    animation: montanhaDaAlegria 0.9s forwards linear;
+  }
+  @keyframes montanhaDaAlegria {
+    0% {
+      -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+      clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+    }
+    25% {
+      -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+      clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+    }
+    50% {
+      -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+      clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+      clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+      clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+    }
+  }
+  
+  
+  @keyframes montanhaDaTristeza {
+    100% {
+      -webkit-clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+      clip-path: polygon(0% 100%, 159px 188px, 171px 185px, 174px 185px, 184px 182px, 191px 183px, 199px 179px, 202px 176px, 219px 158px, 225px 175px, 230px 172px, 245px 179px, 283px 184px, 293px 187px, 311px 192px, 318px 191px, 357px 194px, 100% 100%);
+    }
+    75% {
+      -webkit-clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+      clip-path: polygon(0% 100%, 153px 176px, 165px 174px, 167px 173px, 187px 155px, 193px 161px, 200px 147px, 203px 149px, 220px 129px, 226px 143px, 231px 140px, 240px 154px, 246px 147px, 285px 171px, 295px 174px, 313px 178px, 329px 182px, 100% 100%);
+    }
+    50% {
+      -webkit-clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+      clip-path: polygon(0% 100%, 106px 149px, 145px 128px, 158px 119px, 178px 101px, 184px 107px, 190px 92px, 201px 87px, 217px 66px, 223px 81px, 228px 78px, 244px 94px, 251px 87px, 289px 113px, 302px 125px, 316px 140px, 346px 163px, 100% 100%);
+    }
+    25% {
+      -webkit-clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+      clip-path: polygon(0% 100%, 82px 132px, 117px 97px, 131px 93px, 172px 65px, 179px 76px, 185px 77px, 199px 68px, 217px 44px, 223px 58px, 228px 55px, 244px 60px, 253px 42px, 295px 79px, 314px 87px, 331px 88px, 376px 145px, 100% 100%);
+    }
+    0% {
+      -webkit-clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+      clip-path: polygon(0% 100%, 49px 99px, 100px 53px, 113px 68px, 147px 29px, 153px 40px, 160px 42px, 187px 63px, 209px 11px, 215px 25px, 219px 21px, 244px 61px, 264px 0px, 311px 60px, 330px 79px, 349px 65px, 398px 107px, 100% 100%);
+    }
+  }
+  

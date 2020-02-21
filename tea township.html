@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/tea township.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/nav2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/Tdrag.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <title>八大茶乡</title>
+</head>
+<style>
+        .nav_top{  
+          background: none;
+          box-shadow: none;
+        } 
+</style>
+<body>
+    <div class="nav_top">
+                <label class="toggle">
+                        <input type="checkbox">
+                        <div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                        </div>
+                </label>
+                            
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                            <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                        </symbol>
+                    </svg>
+                <a class="logo" href="./personal info.html"><img src="./images/logo.png"></a>
+    </div>
+    <div class="menu">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <ul class="nav">
+            <li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+            <li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+            <li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+            <li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+            <li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+            <li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+            <li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+        </ul>
+        <ul id="scene" class="scene">
+            <li class="layer" data-depth="2">
+                <div class="menu_circle">
+                    <div class="small_circle"></div>
+                    <p class="circle_word">Tea gardening</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+   
+    <div class="top">
+            <div class="container">
+                <img class="top_logo" src="images/tea_township/town_title.png"/>
+        
+                <div class="characters">
+                    <ul class="characters-list">
+                        <li><a href="#" data-character="Longjing">西湖龙井</a></li>
+                        <li><a href="#" data-character="Maofeng">黄山毛峰</a></li>
+                        <li><a href="#" data-character="Yinzhen">白毫银针</a></li>
+                        <li><a href="#" data-character="Yancha">武夷岩茶</a></li>
+                        <li><a href="#" data-character="Yunwu">庐山云雾</a></li>
+                        <li><a href="#" data-character="Tieguanyin">安溪铁观音</a></li>
+                        <li><a href="#" data-character="Puer">云南普洱</a></li>
+                        <li><a href="#" data-character="Biluochun">苏州碧螺春</a></li>
+                        
+                    </ul>
+                    <div class="characters-poster"></div>
+                    <div class="characters-label"></div>
+                </div>
+            </div>
+        
+            <div class="orientation">
+                <img src="images/tea_township/top/rotate.svg">
+            </div>
+    </div>
+        
+        <div class="town1">
+            <div class="title1">
+                <p>西湖龙井</p>
+                <div class="rectangle1"></div>
+                <img src="images/tea_township/vertical.png">
+                <img class="circle" src="images/tea_township/circle.png">
+            </div>
+            <div class="brief"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief_main">
+                    <p>龙井茶产于浙江杭州的龙井村，属炒青绿茶，向以 " 色绿、香郁、味醇、形美 " 四绝著称于世。
+                        " 龙井茶、虎跑水 " 被并称为杭州双绝。虎跑水中有机的氮化物含量较多，而可溶性矿物质较少，
+                        因而更利于龙井茶香气、滋味的发挥。
+                    </p>
+                </div>
+            </div>
+            <img class="pic1" src="images/tea_township/pic1-1.png"data-wow-offset="100">
+            <div class="story"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story_main">
+                    <p>传说乾隆皇帝下江南时，来到杭州龙井狮峰山下体察民情。这天，乾隆皇帝学着采起了茶叶， 
+                        刚采了一把，忽然太监来报告太后生病了。 乾隆皇帝随手将一把茶叶向口袋里一放，急忙赶回京城。 
+                        其实太后只因山珍海味吃多了上火，双眼红肿，胃里不适。此时乾隆皇帝来到，只觉一股清香，
+                        往口袋里一摸，原来是采的一把茶叶，已经干了。宫女将茶泡好，果然清香扑鼻，太后喝了一口，
+                        双眼顿时舒适多了，红肿消了，胃也不胀了。太后高兴地说:“杭州龙井的茶叶，真是灵丹妙药。”
+                        乾隆皇帝立即传令将狮峰山那十八棵茶树封为御茶，专门进贡太后。
+                        至今，杭州龙井村还保存着这十八棵御茶，到杭州的旅游者中有不少还专程去察访一番，拍照留念。
+                    </p>
+                </div>
+                <img class="audio1" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+        
+            
+            <img class="pic2" src="images/tea_township/pic1-2.png"data-wow-offset="100">
+        </div>
+        <div class="town2">
+            <div class="title2"data-wow-offset="100">
+                <p>黄山毛峰</p>
+                <div class="rectangle2"></div>
+                <img class="title2_img1"src="images/tea_township/tb2.png">
+                <img class="title2_img2"src="images/tea_township/tb3.png">
+            </div>
+            <img class="pic2-1"src="images/tea_township/pic2-1.png"data-wow-offset="100">
+            <div class="brief2"data-wow-offset="100">
+                <div class="brief2_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief2_main">
+                    <p>产于安徽黄山，主要分布在桃花峰的云谷寺、松谷庵、吊桥阉、慈光阁及半寺周围。
+                        这里山高林密，日照短，云雾多，自然条件十分优越，
+                    </p>
+                </div>
+                <div class="brief_part2">
+                    <p>
+                        茶树得云雾之滋润，无寒暑之侵袭，蕴成良好的品质。黄山毛峰采制十分精细。
+                        制成的毛峰茶外形细扁微曲，状如雀舌，香如白兰，味醇回甘。
+                    </p>
+                </div>
+            </div>
+            <img class="pic2-2" src="images/tea_township/pic2-2.png"data-wow-offset="100">
+            <img class="pic2-3" src="images/tea_township/pic2-3.png"data-wow-offset="100">
+            <div class="story2"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story2_main">
+                    <p>明朝天启年间，江南黟县新任县官熊开元带书童来黄山春游迷了路，遇到一位老和尚，便借宿于寺院中。
+                        长老泡茶敬客时，只见开水冲泡下去，热气环绕升起，化作一朵白莲花，随后热气飘散，清香满室。
+                        知县问后方知此茶名叫黄山毛峰，临别时，长老赠送此茶一包和黄山泉水一葫芦，
+                        并嘱一定要用此泉水冲泡才能出现白莲奇景。熊知县回县衙后，正遇同窗旧友太平知县来访，
+                        便冲泡黄山毛峰表演了一番。太平知县暗喜，到京城想献仙茶邀功请赏。皇帝传令进宫表演，
+                        然而却不见白莲奇景出现。皇上大怒，太平知县只得说出实情。皇帝立即传令熊开元进宫受审，
+                        熊知县用黄山泉水在皇帝面前再次冲泡黄山毛峰，果然出现了白莲奇观，皇帝看得眉开眼笑，
+                        便升熊知县为江南巡抚。熊知县心中感慨万千，心想：“黄山名茶尚且品质清高，何况为人呢？”
+                        于是他脱下官服玉带，来到黄山云谷寺出家做了和尚。
+                            
+                    </p>
+                </div>
+                <img class="audio2" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+            
+            
+            <img class="pic2-4"src="images/tea_township/pic2-4.png"data-wow-offset="100">
+            <div class="way"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>冲泡方法</p>
+                </div>
+                <div class="way_main">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><p>1. 冲泡水温：用80°— 90°的开水冲泡，方能使茶水翠绿明亮，香纯、味美。</p></div>
+                            <div class="swiper-slide"><p>2. 冲泡置茶量：每杯可以放3克茶叶，或者2克茶叶。</p></div>
+                            <div class="swiper-slide"><p>3. 冲泡用水的选择：一般开水即可。</p></div>
+
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="town3">
+            <div class="title3"data-wow-offset="100">
+                <p class="title3_word">白毫银针</p>
+                <div class="rectangle3"></div>
+                <img class="title3_img1"src="images/tea_township/tb4.png">
+                <img class="title3_img2"src="images/tea_township/tb5.png">
+            </div>  
+            <img class="pic3-1"src="./images/tea_township/pic3-1.png"data-wow-offset="100">
+            <div class="brief3"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>     
+                <div class="brief3_main">
+                    <p>产于福建北部的福鼎等地。白毫银针满坡白毫色白如银，细长如针，因而得名。
+                        冲泡时，“满盏浮茶乳”，银针挺立，上下交错，非常美观；汤色黄亮清澈，滋味清香甜爽。
+                        由于制作时未经揉捻，茶汁较难浸出，因此冲泡时间应稍延长。白茶味温性凉，能健胃提神，
+                        祛湿退热，常作为药用。
+                    </p>
+                </div>
+            </div> 
+            <div class="way2"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>冲泡方法</p>
+                </div>
+                <div class="way_main">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><p>1. 冲泡水温：选择70°左右的开水进行冲泡。</p></div>
+                            <div class="swiper-slide"><p>2. 冲泡置茶量：取出3克左右茶叶，放入杯中。</p></div>
+                            <div class="swiper-slide"><p>3. 冲泡用水的选择：以清澈的山泉为佳。</p></div>
+                            <div class="swiper-slide"><p>4. 冲泡器具的选择：最好选择透明的玻璃杯，并且用玻璃片做盖。</p></div>
+                            <div class="swiper-slide"><p>5. 先用开水预热茶杯，然后把茶叶放入玻璃杯里，
+                                用水壶把开水先快后慢地冲入杯子里，至1/2 处，使茶芽浸透。片刻后，再冲至七分满为止，
+                                盖上玻璃盖，约5分钟后，就可去掉玻璃盖，饮用。</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div class="town4">
+            <div class="title4"data-wow-offset="100">
+                <div class="rectangle4"></div>
+                <img class="title4_img1"src="images/tea_township/tb6.png">
+                <p>武夷岩茶</p>
+            </div>
+            <img class="pic4-1" src="images/tea_township/pic4-1.png"data-wow-offset="100">
+            <div class="brief4"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>     
+                <div class="brief4_main">
+                    <p>产于福建武夷山。武夷岩茶属半发酵茶，制作方法介于绿茶与红茶之间。
+                        其主要品种有 " 大红袍 " 、 " 白鸡冠 " 、 " 水仙 " 、 " 乌龙 " 、 " 肉桂 " 等。
+                        武夷岩茶品质独特，有浓郁的花香。
+                    </p>
+                </div>
+            </div> 
+            <div class="story4"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story4_main">
+                    <p>武夷岩茶里最著名的 " 大红袍 " 的传说很动人。传说古时一个穷秀才上京赶考，
+                        路过武夷山时病倒了，幸亏得天心庙的方丈相救，给他喝了一碗茶后病就好了。
+                        后来，秀才中状元后，来到武夷山谢恩。秀才在老方丈的陪同下来到茶树面前，
+                        老方丈说： " 去年你犯鼓胀病就是用这种茶叶治好的。这种茶叶炒制后收藏，可以治百病。 " 
+                        状元听了就要了一盒献给了得鼓胀病的皇后，果然茶到病除。
+                        皇上大喜，就将一件大红袍赐予状元，让他代表自己去武夷山封赏。到了茶树前，
+                        状元命人爬上半山腰，将皇上赐的大红袍披在茶树上，以示隆恩。说来奇怪，等掀开大红袍时，
+                        三株茶树的芽叶在阳光下闪烁红光，众人说这是大红袍染红的，后来人们就把这种茶树称之为
+                        " 大红袍 " 了。
+                            
+                    </p>
+                </div>
+                <img class="audio4" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+        
+            
+            <img class="pic4-2" src="./images/tea_township/pic4-2.png"data-wow-offset="100">
+        </div>
+        <div class="town5">
+            <div class="title5"data-wow-offset="100">
+                <div class="rectangle5"></div>
+                <p>庐山云雾</p>
+                <img src="images/tea_township/tb7.png"data-wow-offset="100">
+            </div>
+            <div class="brief5"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief5_main">
+                    <p>产于江西庐山。庐山北临长江，南傍鄱阳湖，气候温和，山水秀美，十分适宜茶树生长。
+                        庐山云雾芽肥毫显，条索秀丽，香浓味甘，汤色清澈。
+                    </p>
+                </div>
+            </div>
+            <div class="story5"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story5_main">
+                    <p>
+                            传说庐山五老峰下有一个宿云庵,住持和尚憨宗以种野茶为业,在山脚下开垦了一大片茶园。
+                            一年四月,忽然冰冻三尺,茶树几乎全被冻死。当地官府派衙役来找憨宗,硬是要买茶叶。
+                            这样天寒地冻,园里哪有茶叶呢?憨宗向衙役百般哀求无效,只好连夜逃走。
+                            九江名士廖雨为憨宗打抱不平,在九江街头到处张贴冤状,控诉官府的横暴无理。
+                            官府不但不理睬,深夜把老百姓赶上山,逼着他们采摘茶叶,竟把憨宗的一园茶叶一扫而空。
+                            憨宗和尚的满腔苦衷感动了上天,一天,从五老峰忽然飞来各种珍禽异鸟,不断撷取茶园中散落的茶籽,
+                            飞到云雾中,将茶籽散落在五老峰的岩隙中。采茶的季节到了,那些鸟儿又从云中飞过来,
+                            飞到山峰上的云雾中采茶。憨宗和尚将这些鲜叶经过制作,就成了“云雾茶”。
+                            
+                    </p>
+                </div>
+                <img class="audio5" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+            
+            
+            <img class="pic5-1" src="./images/tea_township/pic5-1.png"data-wow-offset="100">
+        </div>
+        <div class="town6">
+            <div class="title6"data-wow-offset="100">
+                <div class="rectangle6"></div>
+                <p>安溪铁观音</p>
+                <img class="title6_img1"src="images/tea_township/tb8.png">
+                <img class="title6_img2"src="images/tea_township/tb9.png">
+            </div>
+            <img class="pic6-1" src="images/tea_township/pic6-1.png"data-wow-offset="100">
+            <div class="brief6"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief6_main">
+                    <p>产于闽南安溪。铁观音的制作工艺十分复杂，制成的茶叶条索紧结，色泽乌润砂绿。
+                        好的铁观音，在制作过程中因咖啡碱随水分蒸发还会凝成一层白霜；
+                    </p>
+                </div>
+                <div class="brief6_part2">
+                    <p>
+                        冲泡后，有天然的兰花香，滋味纯浓。用小巧的工夫茶具品饮，先闻香，后尝味，
+                        顿觉满口生香，回味无穷，有健身美容的功效。
+                    </p>
+                </div>
+            </div>
+            <img class="pic6-2" src="images/tea_township/pic6-2.png"data-wow-offset="100">
+            <img class="pic6-3" src="images/tea_township/pic6-3.png"data-wow-offset="100">
+            <div class="story6"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story6_main">
+                    <p>
+                            相传，在乾隆年间，有一个茶农制得一手好茶。他每天晨、昏都会泡三杯茶，
+                            供奉在观音菩萨的神像前，十年来从未间断，可见他向佛的诚心。一夜，
+                            他梦见在山崖上有一株散发着兰花香味的茶树，他正想采摘的时候，被狗叫惊醒了。
+                            第二天，他去山崖上采摘茶叶，果真看到了一株和梦中一模一样的茶树。于是，就采下一些芽叶，
+                            带回家，细心地制作。制成的茶叶泡出来后，味道很鲜爽，让人精神为之一振。
+                            他认为这是茶中之王，就把这株茶树挖回来，精心地培植。几年之后，茶树长得枝繁叶茂。
+                            因为这种茶美如观音重如铁，又是观音托梦所获，所以就叫做“铁观音”。                   
+                    </p>
+                </div>
+                <img class="audio6" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+            
+            
+            <img class="pic6-4" src="./images/tea_township/pic6-4.png"data-wow-offset="100">
+            <div class="way6"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>冲泡方法</p>
+                </div>
+                <div class="way_main">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><p>1. 冲泡水温：需要开水现泡， 水温以90° —100°为佳。</p></div>
+                            <div class="swiper-slide"><p>2. 冲泡置茶量：取出7克左右茶叶，放入杯中。</p></div>
+                            <div class="swiper-slide"><p>3. 冲泡用水的选择：最好用纯净水或者矿泉水来冲泡。</p></div>
+                            <div class="swiper-slide"><p>4. 冲泡器具的选择：根据自己的喜好，选用瓷茶具或紫砂壶。</p></div>
+                            <div class="swiper-slide"><p>5. 把铁观音茶放在茶具里，然后悬壶高冲，再用壶盖刮去漂浮的白泡沫，即可细细地斟酌。</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <div class="blank2"></div>
+        </div>
+        <div class="town7">
+            <div class="title7"data-wow-offset="100">
+                <div class="rectangle7"></div>
+                <p class="title7_word">云南普洱</p>
+                <img class="title7_img1"src="images/tea_township/tb10.png">
+                <img class="title7_img2"src="images/tea_township/tb11.png">
+            </div>
+            <div class="brief7"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief7_main">
+                    <p>产于云南西双版纳等地。普洱茶是采用绿茶或黑茶经蒸压而成的各种云南紧压茶的总称，
+                        包括沱茶、饼茶、方茶、紧茶等。普洱茶的品质优良不仅表现在它的香气、滋润，
+                        滋味醇厚等饮用价值上，还在于它有一定的药效。
+                    </p>
+                </div>
+            </div>
+            <div class="story7"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story7_main">
+                    <p>
+                            清乾隆年间，普洱城内有一大茶庄，庄主性濮，祖传几代都以制茶售茶为业。
+                            这一年，又到了岁贡之时，濮氏茶庄的团茶被普洱府选定为贡品，
+                            于是少庄主与普洱府罗千总一起进京纳贡。这年的春雨时断时续，毛茶没完全晒干，
+                            就急急忙忙压饼、装驮。当时从普洱到昆明的官马大道要走十七八天，从昆明到北京足足要走三个多月，
+                            从春天到夏天，总算在限定的日期前赶到京城。濮少庄主一行在京城的悦来客栈住下之后，
+                            小心地打开竹箬茶包，糟了，所有的茶饼都因为霉变而变色了。两人本来打算自杀谢罪，
+                            幸好一个店小二喝了此茶，觉得滋味很好，于是一行人斗胆把霉变后的茶饼呈了上去。
+                            乾隆是一个喜欢品茶、鉴茶的皇帝，他几次下江南都到了江浙茶山，鼓励种茶制茶。
+                            他还有一个特制的银斗，专门用来称水的轻重，以评定泡茶名泉的优劣。这天，正是各地贡茶齐聚、
+                            斗茶赛茶的吉日，乾隆看着全国各地送来的贡茶真是琳琅满目。突然间，他眼前一亮，
+                            发现有一种茶饼圆和如三秋之月，汤色红浓明亮，犹如红宝石一般，显得十分特别。
+                            一闻，醇厚的香味直沁心脾，喝一口，绵甜爽滑。乾隆大悦道：“此茶何名？滋味这般的好。
+                            ”又问：“何府所贡？”太监忙答道：“此茶为云南普洱府所贡。”“普洱府，普洱府..此等好茶居然无名，
+                            那就叫普洱茶吧。”后来，濮少庄主伙同普洱府的茶师根据这饼茶研究出了普洱茶的加工工艺，
+                            其他普洱茶庄也纷纷效仿，于是普洱茶的制茶工艺在普洱府各茶庄的茶人中代代相传，
+                            并不断发扬光大。从此，普洱茶岁岁入贡清廷，历经两百年不衰。皇宫中“夏喝龙井，
+                            冬饮普洱”也成为了一种时尚和传统。
+                    
+                    </p>
+                </div>
+                <img class="audio7" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+            
+            
+            <img class="pic7-1" src="./images/tea_township/pic7-1.png"data-wow-offset="100">
+        </div>
+        <div class="town8">
+            <div class="title8"data-wow-offset="100">
+                <div class="rectangle8"></div>
+                <p class="title8_word">苏州碧螺春</p>
+                <img class="title8_img1"src="images/tea_township/tb12.png">
+                <img class="title8_img2"src="images/tea_township/tb13.png">
+            </div>
+            <img class="pic8-1" src="images/tea_township/pic8-1.png"data-wow-offset="100">
+            <div class="brief8"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>简介</p>
+                </div>
+                <div class="brief8_main">
+                    <p>产于江苏吴县太湖之滨的洞庭山。碧螺春茶叶用春季从茶树采摘下的细嫩芽头炒制而成；
+                        高级的碧螺春，0.5公斤干茶需要茶芽6－7万个，足见茶芽之细嫩。
+                    </p>
+                </div>
+                <div class="brief8_part2">
+                    <p>
+                        炒成后的干茶条索紧结，白毫显露，色泽银绿，翠碧诱人，卷曲成螺，故名“碧螺春”。
+                        此茶冲泡后杯中白云翻滚，清香袭人，是国内著名的名茶。
+                    </p>
+                </div>
+            </div>
+            <img class="pic8-2" src="images/tea_township/pic8-2.png"data-wow-offset="100">
+            <img class="pic8-3" src="images/tea_township/pic8-3.png"data-wow-offset="100">
+            <div class="story8"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>故事</p>
+                </div>
+                <div class="story8_main">
+                    <p>
+                        很久很久以前，洞庭西山住着一位美丽勤劳的姑娘名叫碧螺。有一天，碧螺姑娘到洞庭东山去砍柴，
+                        忽然闻到一股清香，她抬头张望，发现洞庭东山最高峰莫厘峰上有几棵茶树，于是冒着危险攀上悬崖，
+                        采了些嫩芽揣在怀里下山回家。到家后，碧螺姑娘又累又渴，当她把怀中的茶叶嫩芽取出来时，
+                        只觉得清香袭人，姑娘脱口而道：“香得吓煞人也！”到了清代康熙年间，
+                        康熙皇帝视察时品尝了这种汤色碧绿、卷曲如螺的名茶，倍加赞赏，但觉得“吓煞人香”其名不雅，
+                        于是题名“碧螺春”。
+                    </p>
+                </div>
+                <img class="audio8" src="images/tea_township/play.png"data-wow-offset="100">
+            </div> 
+            
+            
+            <img class="pic8-4" src="./images/tea_township/pic8-4.png"data-wow-offset="100">
+            <div class="way8"data-wow-offset="100">
+                <div class="brief_title">
+                    <p>冲泡方法</p>
+                </div>
+                <div class="way_main">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><p>1. 冲泡水温：用75°— 80°的开水冲泡。</p></div>
+                            <div class="swiper-slide"><p>2. 冲泡置茶量：每杯可以放2克茶叶。</p></div>
+                            <div class="swiper-slide"><p>3. 冲泡用水的选择：以“农夫山泉”“洞庭山”等优质矿泉水为佳。</p></div>
+                            <div class="swiper-slide"><p>4. 冲泡器具的选择：玻璃器具最佳，不可使用塑料器具。</p></div>
+                            <div class="swiper-slide"><p>5. 在透明的玻璃杯中倒入开水，凉至70°后，再放入茶叶，瞬间就可以闻到迷人的香味。
+                                茶叶沉到杯底时，就开出朵朵绿花。品饮时，要小口慢酌。</p>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="voice">
+    <audio id="bgMusic"preload="auto">
+            <source = src="./images/tea_township/tea_story/xihu.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/xihu.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic2"preload="auto">
+            <source = src="./images/tea_township/tea_story/huangshan.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/huangshan.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic4"preload="auto">
+            <source = src="./images/tea_township/tea_story/wuyan.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/wuyan.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic5"preload="auto">
+            <source = src="./images/tea_township/tea_story/lushan.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/lushan.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic6"preload="auto">
+            <source = src="./images/tea_township/tea_story/anxi.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/anxi.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic7"preload="auto">
+            <source = src="./images/tea_township/tea_story/yunnan.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/yunnan.ogg" type="audio/ogg">
+    </audio>
+    <audio id="bgMusic8"preload="auto">
+            <source = src="./images/tea_township/tea_story/suzhou.mp3" type="audio/mp3">
+            <source = src="./images/tea_township/tea_story/suzhou.ogg" type="audio/ogg">
+    </audio>
+    </div>
+    <div class="menu_line">
+        <div class="town_menu">
+            <div class="movemenu">
+                <img class="pot" src="images/tea_township/pot.png">
+                <img class="menu_title" src="images/tea_township/menu_title1.png">               
+                <img class="menu_title" src="images/tea_township/menu_title2.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title3.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title4.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title5.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title6.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title7.png"> 
+                <img class="menu_title" src="images/tea_township/menu_title8.png"> 
+            </div>
+                
+                <div class="menu_box">
+                    <div class="menu_tinybox">西湖<br>龙井</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox">黄山<br>毛峰</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox">白毫<br>银针</div>
+                </div>
+                <div class="menu_box">
+                   <div class="menu_tinybox"> 武夷<br>岩茶</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox">庐山<br>云雾</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox">安溪<br>铁观音</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox">云南<br>普洱</div>
+                </div>
+                <div class="menu_box">
+                    <div class="menu_tinybox"> 苏州<br>碧螺春</div>
+                </div>
+           
+        </div>
+    </div>
+</body>
+
+
+<script src="js/town.js"></script>
+<script src="js/vegas.js"></script>
+</html>

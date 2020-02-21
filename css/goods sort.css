@@ -1,0 +1,530 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+body{
+    overflow-x: hidden;
+    background-color: rgb(221, 231, 236);
+    width: 100vw;
+    margin-right: calc(100vw - 100%);
+    cursor: url(../images/mouse.png),default;
+}
+html{
+    cursor: url(../images/mouse.png),default;
+}
+body::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgb(165, 164, 164);
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(218, 214, 214, 1);
+}
+.goods_menu{
+    position: fixed;
+    width:200px;
+    height:90vh;
+    top:5vh;
+    left:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 0 70px -18px rgba(0, 0, 0, 0.6);
+}
+.bk0{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk0.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    transition: all .5s;
+    opacity: 1;
+}
+.bk1{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk1.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    transition: all .5s;
+    opacity: 0;
+}
+.bk2{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk2.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk3{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk3.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk4{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk4.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk5{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk5.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk6{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk6.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.bk7{
+    position: absolute;
+    top:0;
+    left:0;
+    background-image:url(../images/tea_mall/goods_bk7.png);
+    background-size:cover;
+    width:200px;
+    height:90vh;
+    opacity: 0;
+    transition: all .5s;
+}
+.menu_main{
+    width:100px;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+}
+.mengban{
+    position: absolute;
+    width:200px;
+    height:90vh;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.5);
+}
+.menu_logobox{
+    width:100%;
+    height:150px;
+    position: relative;
+    border-bottom:1px solid rgb(110, 109, 109);
+   
+}
+.menu_title1{
+    position: absolute;
+    width:90px;
+    top:80px;
+    left:3px;
+    z-index:100;
+}
+.menu_title2{
+    position: absolute;
+    width:80px;
+    top:110px;
+    left:53px;
+    z-index:100;
+}
+.tea_listbox{
+    width:100%;
+    height:70%;
+    z-index:100;
+}
+.tea_list{
+    margin-top:20px;
+}
+.tea_list li{
+    width:100%;
+    height:23px;
+    font-family: 华文新魏;
+    margin-top:20px;
+    overflow: hidden;
+    transition: all .3s;
+    cursor: pointer;
+    color: #b3b2b2;
+}
+.list_cn{
+    font-size:18px;
+}
+.list_en{ 
+    font-size:14px;
+    margin-top:5px;
+}
+.tea_list li:nth-child(1){
+    height:40px;
+}
+.tea_list li:nth-child(1){
+    color:#ffffff;
+}
+.tea_list li:nth-child(1){
+    color:#ffffff;
+}
+.tea_list li:hover{
+    height:40px !important;
+}
+.tea_list li:hover{
+    color:#ffffff !important;
+}
+.tea_list li:hover{
+    color:#ffffff !important;
+}
+
+.goods_main{
+    position: absolute;
+    width:70%;
+    height:1000px;
+    top:10vh;
+    right:3%;
+}
+.goods_box{
+    width:190px;
+    height:250px;
+    margin-top:50px;
+    box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.2);
+    position: relative; 
+    transition: all .4s;
+    float:left;
+    margin-right:40px;
+    background-color: #ffffff;
+}
+.goods_box img{
+    width:100%;
+    height:73%;   
+}
+.goods_word{
+    position: absolute;
+    width:170px;
+    height:50px;
+    background: rgb(33, 21, 18);
+    bottom:-15px;
+    left:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size:12px;
+    transition: all .4s;
+}
+.goods_box:hover{
+    transform:scale(1.08);
+}
+.goods_box:hover .goods_word{
+    opacity: 0;
+}
+.goods_box:hover .goods_word2{
+    opacity: 1;
+}
+.word_main{
+    width:140px;
+    height:35px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.goods_word2{
+    position: absolute;
+    width:170px;
+    height:50px;
+    background: #FFD048;
+    bottom:-15px;
+    left:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(253, 253, 253);
+    font-size:12px;
+    opacity: 0;
+    transition: all .4s;
+}
+.word_main2{
+    width:140px;
+    height:35px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.goods_price{
+    width: 90%;
+    height: 20px;
+    color: #c00000;
+    margin-left: 10px;
+}
+.return{
+    position: absolute;
+    top:18px;
+    left:15px;
+    z-index:100;
+}
+.return img{
+    width:25px;
+    height:20px;
+}
+.sp_box{
+    position: fixed;
+    width: 74%;
+    height: 575px;
+    top: 50%;
+    margin-top:-288px;
+    left:50%;
+    margin-left:-26%;
+    background: #ffffff;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: 华文新魏;
+    opacity: 0;
+    display:none;
+    transition: all .3s;
+    box-shadow: 20px 0 70px -18px rgba(0, 0, 0, 0.3);
+}
+.sp_sort{
+    position: absolute;
+    width:270px;
+    top:30px;
+    left:50%;
+    margin-left:-120px;
+    font-family: 华文新魏;
+    font-size:19px;
+    display:flex;
+    align-items: center;
+}
+.sp_sort img{
+    width:40px;
+    height:40px;
+    margin-right:20px;
+}
+.sp_ad{
+    width:450px;
+    height:70%;
+    margin-top:6%;
+}
+.sp_detail{
+    width:250px;
+    height:70%;
+    margin-top:6%;
+    display: flex;
+    align-items: center;
+}
+.detail_main{
+    width:100%;
+    height:100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide img{
+    width:100%;
+    height:100%;
+}
+.sp_title{
+    width:100%;
+    height:24%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height:22px;
+    border-bottom:1px solid rgb(110, 108, 108);
+    margin-bottom:6%;
+}
+.sp_price,.sp_address,.sp_weight,.sp_date{
+    width:100%;
+    height:15%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap:wrap;
+}
+.sp_price1,.sp_address1,.sp_weight1,.sp_date1{
+    width:100%;
+    color:rgb(145, 141, 141);
+}
+.sp_price2,.sp_address2,.sp_weight2,.sp_date2{
+    width:100%;
+    margin-top:2%;
+}
+.sp_date{
+    border-bottom:1px solid rgb(110, 108, 108);
+}
+.sp_purchase{
+    width:100%;
+    height:13%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pur_word1{
+    color: #fff;
+    margin-top: 1%;
+    cursor: pointer;
+    left: 25%;
+    position: absolute;
+}
+.pur_btn1{
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    left: 16%;
+    bottom: 0;
+    z-index: 0;
+    cursor: pointer;
+}
+.pur_word2{
+    color: #fff;
+    margin-top: 1%;
+    cursor: pointer;
+    right: 24%;
+    position: absolute;
+}
+.pur_btn2{
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 14%;
+    bottom: 0;
+    z-index: 0;
+    cursor: pointer;
+}
+  /*包裹自定义分页器的div的位置等CSS样式*/ 
+  .swiper-pagination-custom { 
+    bottom: 10px; 
+    left: 0; 
+    width: 100%; 
+    } 
+    /*自定义分页器的样式，这个你自己想要什么样子自己写*/ 
+    .swiper-pagination-customs { 
+    width: 12px; 
+    height: 21px; 
+    display: inline-block; 
+    background-image: url(../images/tea_mall/slide1.png); 
+    background-size: cover;
+    margin: 0 12px; 
+    cursor: pointer;
+    } 
+    /*自定义分页器激活时的样式表现*/ 
+    .swiper-pagination-customs-active { 
+        width: 15px; 
+        height: 26px; 
+        background-image: url(../images/tea_mall/slide2.png);
+        cursor: pointer;
+    } 
+  
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+.close img{
+    width:20px;
+    height:20px;
+}
+.sp_code_mengban{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: all .3s;
+}
+.sp_code{
+    width:310px;
+    height:380px;
+    background: #ebebeb;
+    z-index:10000;
+    box-shadow: 20px 0 70px -18px rgba(0, 0, 0, 0.3);
+    transition: all .15s;
+    transform: scale(0.1);
+}
+.code_box{
+    width:100%;
+    height:330px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.code{
+    width:200px;
+    height:200px;
+    transition: all .3s;
+}
+.gougou{
+    position: absolute;
+    top:50%;
+    margin-top:-35px;
+    left:50%;
+    margin-left:-35px;
+    width:70px;
+    height:70px;
+    opacity: 0;
+    display: none;
+    transition: all .5s;
+}
+.code_word{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 700px) {
+    .sp_box{
+        height:485px;
+        top: 50%;
+        margin-top:-243px;
+    }   
+}

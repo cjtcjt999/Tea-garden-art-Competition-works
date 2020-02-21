@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tea personal.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav2.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="./js/shadowring.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <title>个人中心</title>
+</head>
+<style>
+.nav_top{  
+  background: none;
+  box-shadow: none;
+}
+.toggle input + div div span:before, .toggle input + div div span:after {
+  background: #fff;
+}
+.toggle input + div svg {
+  stroke: #fff;
+}
+.logo{
+  display:none;
+}
+</style>
+<body>
+    <div class="nav_top">
+        <label class="toggle">
+                <input type="checkbox">
+                <div>
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <svg>
+                        <use xlink:href="#path">
+                    </svg>
+                    <svg>
+                        <use xlink:href="#path">
+                    </svg>
+                </div>
+        </label>
+                    
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                    <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                </symbol>
+            </svg>
+       
+</div>
+<div class="menu">
+  <div id="box1"></div>
+  <div id="box2"></div>
+<ul class="nav">
+    <li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+    <li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+    <li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+    <li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+    <li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+    <li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+    <li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+</ul>
+<ul id="scene" class="scene">
+    <li class="layer" data-depth="2">
+        <div class="menu_circle">
+            <div class="small_circle"></div>
+            <p class="circle_word">Tea gardening</p>
+        </div>
+    </li>
+    
+</ul>
+</div>
+<div class="swiper-container">
+    <div class="personal_menubox">
+      <ul class="personal_menu">
+          <li class="one" ><div class="icon1"></div>个人信息</li>
+          <li class="two" ><div class="icon2"></div>学习进度</li>
+          <li class="three" ><div class="icon3"></div>订单列表</li>
+          <li class="four" ><div class="icon4"></div>活动中心</li>
+          <li class="five" ><div class="icon5"></div>我的关注</li>
+          <li class="six" ><div class="icon6"></div>我的喜欢</li>
+      </ul>
+    </div>
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-no-swiping">
+          <div class="personalbox1">
+            <div class="mengban"></div>
+            <div class="personal_main">
+              
+                <div class="personal_title">
+                  <p class="title_word">个人信息</p>
+                  <img class="three_circle" src="./images/tea_personal/three_circle.png">
+                  <div class="login_quit"><a href="./prepare.html"><img src="./images/tea_personal/login_quit.png">退出登录</a></div>
+                </div>
+                <div class="mainbox">
+                    <div class="personal_touxiang">
+                        <div class="touxiang_title">头像</div>
+                        <div class="touxiang_out">
+                          <div class="touxiang_box">
+                              <img src="./images/1.jpg">
+                          </div>
+                        </div>
+                        <div class="touxiang_shangchuan">
+                            <div class="shangchuan_request">
+                                支持 jpg、png 格式大小 5M 以内的图片
+                            </div>
+                        </div>
+                        <div class="shangchuan_button">
+                            <div class="shangchuan_anniu">
+                                点击上传
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal_user">
+                        <div class="user_title">
+                            <p>用户名</p>
+                        </div>
+                        <div class="user_main">
+                          <input type="text"value="guest">
+                        </div>
+                        <div class="user_xiugai">
+                          <div class="xiugai_box"><img src="./images/tea_personal/xiugai1.png"><p>修改</p></div>
+                        </div>
+                    </div>
+
+                    <div class="personal_appellation">
+                        <div class="appellation_title">
+                            <p>当前称谓</p>
+                        </div>
+                        <div class="appellation_main">
+                          <p>茶农</p>
+                        </div>
+                        <div class="integral_title">
+                          <p>积分</p>
+                        </div>
+                        <div class="integral_main">
+                          <p>520</p>
+                        </div>
+                    </div>
+
+                    <div class="personal_phone">
+                        <div class="phone_title">
+                            <p>手机号码</p>
+                        </div>
+                        <div class="phone_main">
+                            <input type="text"value="18668207857">
+                        </div>
+                        <div class="phone_xiugai">
+                          <div class="phone_xiugaibox"><img src="./images/tea_personal/xiugai1.png"><p>修改</p></div>
+                        </div>
+                    </div>
+
+                    <div class="personal_address">
+                        <div class="address_title">
+                            <p>收货地址</p>
+                        </div>
+                        <div class="address_main">
+                          <input type="text"value="浙江省 杭州市 xxxx">
+                        </div>
+                        <div class="address_xiugai">
+                          <div class="address_xiugaibox"><img src="./images/tea_personal/xiugai1.png"><p>修改</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>  
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+          <div class="personalbox2">
+            <div class="mengban"></div>
+            <div class="personal_main">
+                <div class="personal_title"><p class="title_word">学习进度</p></div>
+                <div class="mainbox">
+                  <div class="studymain">
+                      <div class="study_box">
+                        <img src="./images/tea_personal/002.png">
+                        <div class="study_right">
+                          <div class="progressbox"></div>
+                          <p class="study_word">茶艺文化</p>
+                        </div>
+                          
+                        
+                      </div>
+                      <div class="study_box">
+                        <img src="./images/tea_personal/003.png">
+                        <div class="study_right">
+                          <div class="progressbox2"></div>
+                          <p class="study_word">茶艺理论</p>
+                        </div>
+                        
+                      </div>
+                      <div class="study_box">
+                        <img src="./images/tea_personal/004.png">
+                        <div class="study_right">
+                          <div class="progressbox3"></div>
+                          <p class="study_word">基础茶艺</p>
+                        </div>
+                        
+                      </div>
+                      <div class="study_box">
+                        <img src="./images/tea_personal/005.png">
+                        <div class="study_right">
+                          <div class="progressbox4"></div>
+                          <p class="study_word">茶艺实践</p>
+                        </div>
+                        
+                      </div>
+                      <div class="study_box">
+                        <img src="./images/tea_personal/006.png">
+                        <div class="study_right">
+                          <div class="progressbox5"></div>
+                          <p class="study_word">茶叶评审基础</p>
+                        </div>
+                        
+                      </div>
+                      <div class="study_box">
+                        <img src="./images/tea_personal/007.png">
+                        <div class="study_right">
+                          <div class="progressbox6"></div>
+                          <p class="study_word">茶艺作品赏析</p>
+                        </div>
+                        
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>  
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+          <div class="personalbox3">
+            <div class="mengban"></div>
+            <div class="personal_main">
+                <div class="personal_title"><p class="title_word">订单列表</p></div>
+                  <div class="over">
+                    <div class="mainbox2">
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                        <div class="order_line">
+                            <div class="order_img">
+                                <img src="images/tea_mall/goods9.jpg">
+                            </div>
+                            <div class="order_title">
+                                <p>醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋</p>
+                            </div>
+                            <div class="order_price">
+                                <p>￥256.00</p>
+                            </div>
+                            <div class="order_count">
+                                <p>1</p>
+                            </div>
+                            <div class="order_time">
+                                <p>2019/8/3</p>
+                            </div>
+                            <div class="order_status">
+                                  已支付
+                            </div>
+                            <div class="order_delete">
+                                  <a href="#">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </div>  
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+          <div class="personalbox4">
+            <div class="mengban"></div>
+            <div class="personal_main">
+                <div class="personal_title"><p class="title_word">活动中心</p></div>
+                <div class="over">
+                    <div class="mainbox2">
+                      <div class="activity_line">
+                          <div class="activity_img">
+                              <img src="images/tea_picture/1/hxzyyt.jpg">
+                          </div>
+                          <div class="activity_title">
+                              <p>安吉茶俗活动交流会</p>
+                          </div>
+                          <div class="activity_status">
+                                已报名
+                          </div>
+                      </div>
+                      <div class="activity_line">
+                          <div class="activity_img">
+                              <img src="images/tea_picture/1/nct.jpg">
+                          </div>
+                          <div class="activity_title">
+                              <p>杭州龙井村茶叶博物馆之旅</p>
+                          </div>
+                          <div class="activity_status">
+                                已参加
+                          </div>
+                      </div>
+                    </div>  
+                </div>
+            </div>
+          </div>  
+        </div>
+        <div class="swiper-slide swiper-no-swiping">
+          <div class="personalbox5">
+            <div class="mengban"></div>
+            <div class="personal_main">
+                <div class="personal_title"><p class="title_word">我的关注</p></div>
+                <div class="mainbox">
+
+                </div>
+              </div>
+            </div>
+        </div>  
+        <div class="swiper-slide swiper-no-swiping">
+            <div class="personalbox6">
+              <div class="mengban"></div>
+                <div class="personal_main">
+                  <div class="personal_title"><p class="title_word">我的喜欢</p></div>
+                    <div class="over">
+                        <div class="mainbox2">
+                          <div class="love_line">
+                              <div class="love_img"></div>
+                              <div class="love_button"><img src="./images/tea_personal/icon62.png"><p>取消喜欢</p></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+</div>
+    
+ 
+    
+
+
+
+
+
+
+
+    
+</body>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true, // 循环模式选项
+    observer:true, // 修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true, // 修改swiper的父元素时，自动初始化swiper
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    
+
+    speed:500,
+  })    
+
+  var index2;
+  $(".personal_menu li").hover(function(){
+    index2 = $(this).index();
+    if(index2==0){
+    $(".icon1").addClass("add1");
+    }
+    if(index2==1){
+    $(".icon2").addClass("add2");
+    }
+    if(index2==2){
+    $(".icon3").addClass("add3");
+    }
+    if(index2==3){
+    $(".icon4").addClass("add4");
+    }
+    if(index2==4){
+    $(".icon5").addClass("add5");
+    }
+    if(index2==5){
+    $(".icon6").addClass("add6");
+    }
+  },function(){
+    if(index2==0){
+    $(".icon1").removeClass("add1");
+    }
+    if(index2==1){
+    $(".icon2").removeClass("add2");
+    }
+    if(index2==2){
+    $(".icon3").removeClass("add3");
+    }
+    if(index2==3){
+    $(".icon4").removeClass("add4");
+    }
+    if(index2==4){
+    $(".icon5").removeClass("add5");
+    }
+    if(index2==5){
+    $(".icon6").removeClass("add6");
+    }
+  })
+
+
+  var index;
+  $(".personal_menu li").click(function(){
+        
+        index = $(this).index();
+        console.log(index);
+        mySwiper.slideTo(index+1);
+        $(".personal_menu li").eq(index).css({"background":"#fff","color":"#333"});
+        $(".personal_menu li").eq(index).siblings().css({"background":"none","color":"#fff"});
+        if(index==1){
+        sc();
+        sc2();
+        sc3();
+        sc4();
+        sc5();
+        sc6();
+        }
+        if(index==0){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon12.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon21.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon31.png)");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon41.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon51.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon61.png)");
+        }
+        if(index==1){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon11.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon22.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon31.png)");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon41.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon51.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon61.png)");
+        }
+        if(index==2){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon11.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon21.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon32.png)");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon41.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon51.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon61.png)");
+       
+        }
+        if(index==3){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon11.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon21.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon31.png");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon42.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon51.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon61.png)");
+        }
+        if(index==4){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon11.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon21.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon31.png)");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon41.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon52.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon61.png)");
+        }
+        if(index==5){
+        $(".icon1").css("background-image","url(./images/tea_personal/icon11.png)");
+        $(".icon2").css("background-image","url(./images/tea_personal/icon21.png)");
+        $(".icon3").css("background-image","url(./images/tea_personal/icon31.png)");
+        $(".icon4").css("background-image","url(./images/tea_personal/icon41.png)");
+        $(".icon5").css("background-image","url(./images/tea_personal/icon51.png)");
+        $(".icon6").css("background-image","url(./images/tea_personal/icon62.png)");
+        }
+  })
+      
+</script>
+<script>
+    $(window).scroll(function(){
+ var dist=$(window).scrollTop();
+ console.log(dist);
+ 
+ if(dist==0){
+     $(".header").css("background","rgba(255, 255, 255, 0)"); 
+     $(".header").css("box-shadow","none");
+     setTimeout(function(){
+     $(".user_personal").css("display","none");
+     }, 300);
+     $(".user_personal").css("opacity","0");
+     setTimeout(function(){
+     $(".user_touxiang").css("display","none"); 
+     }, 300);
+     $(".user_touxiang").css("opacity","0");
+
+     
+ }
+ else{
+     $('.header').css("background","rgba(255, 255, 255, 1)");
+     $(".header").css("box-shadow"," 0 0 0.9375rem 0 rgba(34, 35, 36, 0.25)");
+     setTimeout(function(){
+     $(".user_personal").css("display","flex");
+     }, 10);
+     $(".user_personal").css("opacity","1");
+     setTimeout(function(){
+     $(".user_touxiang").css("display","flex");
+     }, 10);
+     $(".user_touxiang").css("opacity","1");
+     
+    
+ }
+})
+
+$(".xiugai_box").hover(function(){
+  $(".xiugai_box img").attr("src","./images/tea_personal/xiugai2.png");
+  $(".user_xiugai").css("color","#fff");
+},function(){
+  $(".xiugai_box img").attr("src","./images/tea_personal/xiugai1.png");
+  $(".user_xiugai").css("color","#909090");
+})
+
+$(".phone_xiugaibox").hover(function(){
+  $(".phone_xiugaibox img").attr("src","./images/tea_personal/xiugai2.png");
+  $(".phone_xiugai").css("color","#fff");
+},function(){
+  $(".phone_xiugaibox img").attr("src","./images/tea_personal/xiugai1.png");
+  $(".phone_xiugai").css("color","#909090");
+})
+ </script>
+ <script type="text/javascript">
+  $(function() {
+    $("#update").click(sc);
+  })
+
+  function sc() {
+
+    for(let i = 1; i <= 30; i++) {
+      setTimeout(`shadow(${i})`, i * 20);
+    }
+  }
+
+  function shadow(val) {
+    $(".progressbox").each((i, x) => {
+      if($(x)[0].offsetHeight > 0) {
+        $(x).ShadowRing({
+          r: 350,
+          ti: val,
+          count: 100,
+          offset: 3,
+          fontsize: 15,
+          fontfamily: "微软雅黑"
+        })
+      }
+    });
+  }
+
+function sc2() {
+
+for(let i = 1; i <= 90; i++) {
+  setTimeout(`shadow2(${i})`, i * 20);
+}
+}
+
+function shadow2(val) {
+$(".progressbox2").each((i, x) => {
+  if($(x)[0].offsetHeight > 0) {
+    $(x).ShadowRing({
+      r: 350,
+      ti: val,
+      count: 100,
+      offset: 3,
+      fontsize: 15,
+      fontfamily: "微软雅黑"
+    })
+  }
+});
+}
+
+function sc3() {
+
+for(let i = 1; i <= 70; i++) {
+  setTimeout(`shadow3(${i})`, i * 20);
+}
+}
+
+function shadow3(val) {
+$(".progressbox3").each((i, x) => {
+  if($(x)[0].offsetHeight > 0) {
+    $(x).ShadowRing({
+      r: 350,
+      ti: val,
+      count: 100,
+      offset: 3,
+      fontsize: 15,
+      fontfamily: "微软雅黑"
+    })
+  }
+});
+}
+
+function sc4() {
+
+for(let i = 1; i <= 10; i++) {
+  setTimeout(`shadow4(${i})`, i * 20);
+}
+}
+
+function shadow4(val) {
+$(".progressbox4").each((i, x) => {
+  if($(x)[0].offsetHeight > 0) {
+    $(x).ShadowRing({
+      r: 350,
+      ti: val,
+      count: 100,
+      offset: 3,
+      fontsize: 15,
+      fontfamily: "微软雅黑"
+    })
+  }
+});
+}
+
+function sc5() {
+
+for(let i = 1; i <= 40; i++) {
+  setTimeout(`shadow5(${i})`, i * 20);
+}
+}
+
+function shadow5(val) {
+$(".progressbox5").each((i, x) => {
+  if($(x)[0].offsetHeight > 0) {
+    $(x).ShadowRing({
+      r: 350,
+      ti: val,
+      count: 100,
+      offset: 3,
+      fontsize: 15,
+      fontfamily: "微软雅黑"
+    })
+  }
+});
+}
+
+function sc6() {
+
+for(let i = 1; i <= 80; i++) {
+  setTimeout(`shadow6(${i})`, i * 20);
+}
+}
+
+function shadow6(val) {
+$(".progressbox6").each((i, x) => {
+  if($(x)[0].offsetHeight > 0) {
+    $(x).ShadowRing({
+      r: 350,
+      ti: val,
+      count: 100,
+      offset: 3,
+      fontsize: 15,
+      fontfamily: "微软雅黑"
+    })
+  }
+});
+}
+</script>
+<script>
+
+var count=0;
+  $(".three_circle").click(function(){
+    if(count%2==0){
+      $(".three_circle").attr("src","./images/tea_personal/three_circle2.png")
+      $(".login_quit").css("display","flex");
+      setTimeout(function(){
+        $(".login_quit").css("opacity","1");
+      },10)
+    }
+    else{
+      $(".three_circle").attr("src","./images/tea_personal/three_circle.png")
+      setTimeout(function(){
+        $(".login_quit").css("display","none");
+      },300)
+        $(".login_quit").css("opacity","0");
+    }
+    count++;
+  })
+
+  $(".login_quit a").hover(function(){
+    $(".login_quit img").attr("src","./images/tea_personal/login_quit2.png");
+  },function(){
+    $(".login_quit img").attr("src","./images/tea_personal/login_quit.png");
+  })
+
+  
+</script>
+
+</html>

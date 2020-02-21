@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/prepare.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <title>茶园拾艺</title>
+</head>
+<body>
+    <!-- Swiper -->
+    
+<div class="container swiper-no-swiping">
+
+  <div class="timeline">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(images/tea_prepare/prepare10.jpg);" data-year="茶乡之旅">
+          <div class="swiper-slide-content"><span class="timeline-year">茶乡之旅</span>
+            <h4 class="timeline-title">传承发扬<br>特色乡土文化</h4>
+            <p class="timeline-text">Tea is a very magical thing. When you fall in love with it, you not only learn to drink good tea, but also begin to understand everything about tea. Now let's enjoy the eight most beautiful tea villages in China.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/tea_prepare/prepare5.jpg);" data-year="茶艺之韵">
+          <div class="swiper-slide-content"><span class="timeline-year">茶艺之韵</span>
+            <h4 class="timeline-title">韵味独到<br>畅享悠然生活</h4>
+            <p class="timeline-text">Tea art is a kind of culture. On the basis of Chinese excellent culture, tea art extensively absorbs and draws lessons from other art forms, and extends to literature, art and other fields, forming a Chinese tea culture with strong national characteristics.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/3.jpg);" data-year="茶艺教学">
+          <div class="swiper-slide-content"><span class="timeline-year">茶艺教学</span>
+            <h4 class="timeline-title">雅致教学<br>传中华茶文化</h4>
+            <p class="timeline-text">Tea art teaching is a good way to cultivate people's knowledge of tea culture. Our website enables everyone to appreciate the beauty of tea art.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/tea_prepare/prepare3.jpg);" data-year="茶坛逸事">
+          <div class="swiper-slide-content"><span class="timeline-year">茶坛逸事</span>
+            <h4 class="timeline-title">茶亦有道<br>茶语清心</h4>
+            <p class="timeline-text">We provide tea enthusiasts with the best platform for tea culture exchange and tea culture dissemination.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/tea_prepare/prepare7.jpg);" data-year="茶楼酒肆">
+          <div class="swiper-slide-content"><span class="timeline-year">茶楼酒肆</span>
+            <h4 class="timeline-title">本色佳茗<br>上古茶香</h4>
+            <p class="timeline-text">Tea shop is a professional authentic brand of tea, tea sets, flower tea shopping mall, operating black tea, green tea, Pu'er tea, West Lake Longjing, and other domestic and foreign origin brand tea.</p>
+          </div>
+          <a href="login.html">
+            <div class="prepare_login">
+                立即登录
+          </div>
+          </a>
+        </div>
+      
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+</body>
+ <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+    var timelineSwiper = new Swiper ('.timeline .swiper-container', {
+  direction: 'vertical',
+  loop: false,
+  autoplay : 4000,
+  autoplayStopOnLast : true,
+  autoplayDisableOnInteraction : false,
+  speed: 1600,
+  mousewheelControl : true,
+  pagination: '.swiper-pagination',
+  paginationBulletRender: function (swiper, index, className) {
+    var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+    return '<span class="' + className + '">' + year + '</span>';
+  },
+  paginationClickable: true,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  breakpoints: {
+    768: {
+      direction: 'horizontal',
+    }
+  }
+  
+});
+
+
+
+</script>
+</html>

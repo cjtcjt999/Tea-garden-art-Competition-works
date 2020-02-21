@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>茶艺知识知多少</title>	
+	<link rel="stylesheet" type="text/css" href="css/teach-prepare.css" />
+	<link rel="stylesheet" type="text/css" href="css/teach-entry.css" />
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/nav2.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>document.documentElement.className = 'js';</script>
+	<!-- <script src="js/nav.js"></script> -->
+	<script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+</head>
+<style>
+.nav_top{  
+  background: none;
+  box-shadow: none;
+}
+.toggle input + div div span:before, .toggle input + div div span:after {
+  background: #000;
+}
+.toggle input + div svg {
+  stroke: #000;
+}
+
+</style>
+	<body class="demo-switch loading" style="background: url(images/teach_bk9.jpg)">
+	<div class="nav_top">
+                <label class="toggle">
+                        <input type="checkbox">
+                        <div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                        </div>
+                </label>
+                            
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                            <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                        </symbol>
+                    </svg>
+                <a class="logo" href="./personal info.html"><img src="./images/logo.png"></a>
+    </div>
+    <div class="menu">
+			<div id="box1"></div>
+			<div id="box2"></div>
+        <ul class="nav">
+            <li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+            <li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+            <li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+            <li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+            <li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+            <li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+            <li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+        </ul>
+        <ul id="scene" class="scene">
+            <li class="layer" data-depth="2">
+                <div class="menu_circle">
+                    <div class="small_circle"></div>
+                    <p class="circle_word">Tea gardening</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="message">Please view this demo on a desktop.</div>
+			<div class="content">
+				<nav class="page-nav">
+					<a class="page-nav__item" href="./tea teach.html" style="font-family: 仓耳今楷;
+				">茶艺课程</a>
+					<a class="page-nav__item" href="./game1.html" style="font-family: 仓耳今楷;
+					">趣味课堂</a>
+
+					<a class="page-nav__item page-nav__item--close" href="#">Back</a>
+				</nav>
+				<div class="pieces" style="background-image: url(images/p3.jpg); background-size: cover;"></div>
+				<div class="content__title">
+					<img src="./images/p2.png">
+					<div class="click">
+						<img class="hand" src="./images/click.png">
+						<img class="click_wave" src="./images/click_wave.png">
+						<img class="click_wave2" src="./images/click_wave.png">
+					</div>
+				</div>
+			</div>
+		</main>
+	
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		{
+			imagesLoaded(document.body, { background: true }, () => document.body.classList.remove('loading'));
+
+			const piecesEl = document.querySelector('.content .pieces');
+			const piecesObj = new Pieces(piecesEl, {
+				 pieces: {rows: 15, columns: 16}
+			});
+			const menuEl = document.querySelector('.page-nav');
+			const optionsCtrl = document.querySelector('.content__title');
+			const closeOptionsCtrl = menuEl.querySelector('a.page-nav__item--close');
+
+			const showOptions = () => {
+				menuEl.classList.add('page-nav--open');
+
+				piecesObj.animate({
+					duration: 3000,
+					delay: (t,i) => {
+						const elBounds = piecesEl.getBoundingClientRect();
+						const x1 = elBounds.left + elBounds.width/2;
+						const y1 = elBounds.top + elBounds.height/2;
+						const tBounds = t.getBoundingClientRect();
+						const x2 = tBounds.left + tBounds.width/2;
+						const y2 = tBounds.top + tBounds.height/2;
+						const dist = Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
+						const maxDist = Math.sqrt(Math.pow(elBounds.left-x1,2) + Math.pow(elBounds.top-y1,2));
+						const maxDelay = 300;
+
+						t.dataset.centerx = x2;
+						t.dataset.centery = y2;
+
+						return -1*maxDelay/maxDist*dist + maxDelay;
+					},
+					easing: [0.1,1,0,1],
+					translateX: (t,i) => { 
+						return t.dataset.column < piecesObj.getTotalColumns()/2 ? anime.random(-400,0) : anime.random(0,400);
+					},
+					translateY: (t,i) => { 
+						return t.dataset.row < piecesObj.getTotalRows()/2 ? anime.random(-400,0) : anime.random(0,400);
+					},
+					opacity: 0.2
+				});
+				
+				anime.remove(optionsCtrl);
+				anime({
+					targets: optionsCtrl,
+					duration: 700,
+					easing: 'easeOutExpo',
+					scale: 1.2,
+					opacity: 0
+				});
+
+				anime.remove(menuEl);
+				anime({
+					targets: menuEl,
+					duration: 700,
+					delay: 150,
+					easing: 'easeOutExpo',
+					scale: [0,1],
+					opacity: 1
+				});
+			};
+
+			const hideOptions = (ev) => {
+				ev.preventDefault();
+				menuEl.classList.remove('page-nav--open');
+
+				piecesObj.animate({
+					duration: 600,
+					delay: (t,i) => {
+						const elBounds = piecesEl.getBoundingClientRect();
+						const x1 = elBounds.left + elBounds.width/2;
+						const y1 = elBounds.top + elBounds.height/2;
+						const x2 = t.dataset.centerx;
+						const y2 = t.dataset.centery;
+						const dist = Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
+						const maxDist = Math.sqrt(Math.pow(elBounds.left-x1,2) + Math.pow(elBounds.top-y1,2));
+						const maxDelay = 800;
+
+						return maxDelay/maxDist*dist;
+					},
+					easing: [0.1,1,0,1],
+					translateX: 0,
+					translateY: 0,
+					opacity: 1
+				});
+				
+				anime.remove(optionsCtrl);
+				anime({
+					targets: optionsCtrl,
+					duration: 700,
+					delay: 200,
+					easing: 'easeOutQuint',
+					scale: [1.1,1],
+					opacity: 1
+				});
+
+				anime.remove(menuEl);
+				anime({
+					targets: menuEl,
+					duration: 700,
+					easing: 'easeOutQuint',
+					scale: 0.8,
+					opacity: 0
+				});
+			};
+
+			optionsCtrl.addEventListener('click', showOptions);
+			closeOptionsCtrl.addEventListener('click', hideOptions);
+		}
+		</script>
+<script>
+/*导航栏*/
+    var count=0;
+        var a;
+        var b,c,d,e,f,g,h;
+        $(".toggle input + div").click(function(){
+            
+            if(count%2==0){
+                $(".toggle input + div div span, .toggle input + div div span").removeClass("change");
+                $(".toggle input + div svg").css("stroke","#fff");
+               $(".nav_top").css("cursor","none");
+              console.log(count);
+                clearTimeout(a);
+                $(".menu").css("display","flex");
+                setTimeout(function(){
+                $(".menu").css("opacity","1");
+                $(".menu").css("background","rgba(0,0,0,0.85)");
+                $(".menu").css("height","100vh");
+                $(".menu_circle").css("opacity","1");
+                $(".logo img").attr("src","./images/white logo.png");
+                },10)
+                b=setTimeout(function(){
+                $(".nav li:nth-child(1)").addClass("animated fadeInUp");
+                },10)
+                c=setTimeout(function(){
+                $(".nav li:nth-child(2)").addClass("animated fadeInUp");
+                },200)
+                d=setTimeout(function(){
+                $(".nav li:nth-child(3)").addClass("animated fadeInUp");
+                },400)
+                e=setTimeout(function(){
+                $(".nav li:nth-child(4)").addClass("animated fadeInUp");
+                },600)
+                f=setTimeout(function(){
+                $(".nav li:nth-child(5)").addClass("animated fadeInUp");
+                },800)
+                g=setTimeout(function(){
+                $(".nav li:nth-child(6)").addClass("animated fadeInUp");
+                },1000)
+                h=setTimeout(function(){
+                $(".nav li:nth-child(7)").addClass("animated fadeInUp");
+                },1200)
+                $(".nav_top").addClass("backadd");
+            }
+            if(count%2==1){
+				$(".nav_top").css("cursor","url(./images/mouse.png),default");
+                clearTimeout(b);
+                clearTimeout(c);
+                clearTimeout(d);
+                clearTimeout(e);
+                clearTimeout(f);
+                clearTimeout(g);
+                clearTimeout(h);
+                a=setTimeout(function(){
+                $(".menu").css("display","none");
+                },500)
+                $(".toggle input + div svg").css("stroke","#000");
+                $(".logo img").attr("src","./images/logo.png");
+                $(".menu_circle").css("opacity","0");
+                $(".menu").css("height","0vh");
+                $(".menu").css("opacity","0");
+                $(".menu").css("background","rgba(0,0,0,0)");  
+                $(".nav li").removeClass("animated fadeInUp");
+                $(".nav_top").removeClass("backadd");
+            }
+            count++;      
+            })
+        $(window).scroll(function(){/*顶部导航栏滚动变色*/
+    
+            var dist=$(window).scrollTop();
+            console.log("dist:"+dist);
+            if(dist>0){
+                $(".nav_top").css({"background":"#fff","box-shadow": "0 0 0.9375rem 0 rgba(34, 35, 36, 0.25)"});
+                $(".toggle input + div div span, .toggle input + div div span").addClass("change");
+                $(".toggle input + div svg").css("stroke","#000");
+                $(".logo img").attr("src","./images/logo.png");
+            var count2=0;
+            $(".toggle input + div").click(function(){
+            if(count2%2==0){
+                $(".logo img").attr("src","./images/white logo.png");
+            }
+            if(count2%2==1){
+                $(".logo img").attr("src","./images/logo.png");
+                $(".toggle input + div div span, .toggle input + div div span").addClass("change");
+                $(".toggle input + div svg").css("stroke","#000");
+    
+            }
+            count2++;      
+            })
+            }
+            else{
+                $(".nav_top").css({"background":"none","box-shadow": "none"});
+                $(".toggle input + div div span, .toggle input + div div span").removeClass("change");
+                $(".toggle input + div svg").css("stroke","#000");
+                $(".logo img").attr("src","./images/logo.png");
+            
+                var count2=0;
+                $(".toggle input + div").click(function(){
+                if(count2%2==0){
+                $(".logo img").attr("src","./images/white logo.png");
+                }
+                if(count2%2==1){
+                $(".logo img").attr("src","./images/logo.png");
+                $(".toggle input + div div span, .toggle input + div div span").removeClass("change");
+                $(".toggle input + div svg").css("stroke","#000");
+                }
+                count2++;      
+                })
+            }     
+         })
+    // Yep, that's it!
+    $('#scene').parallax();
+    $(".menu_circle").hover(function(){
+			$("#box1,#box2").css("opacity","0");
+            $(".small_circle").css({"width":"220px","height":"220px"});
+            $(".circle_word").css({"color":"#000","font-size":"23px","letter-spacing":"2px"});
+        },function(){
+			$("#box1,#box2").css("opacity","1");
+            $(".small_circle").css({"width":"0px","height":"0px"});
+            $(".circle_word").css({"color":"#fff","font-size":"26px","letter-spacing":"8px"});
+    })
+	$(".link").hover(function(){
+		$("#box1").css({"opacity":"0"});
+		$("#box2").css({"background":"#000","width":"8px","height":"8px"});
+    },function(){
+		$("#box1").css({"opacity":"1"});
+		$("#box2").css({"background":"#fff","width":"10px","height":"10px"});
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,575 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+@font-face{
+    font-family: '仓耳今楷';
+    src:url(../fonts/仓耳今楷05\ W05.ttf);
+}
+@font-face{
+    font-family: '汉标精工';
+    src:url(../fonts/汉标榜样毛笔楷体.ttf);
+}
+body{
+    /* background-image: url(../images/login_bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    font-family: '仓耳今楷';
+    overflow: hidden;
+}
+.back{
+    position: absolute;
+    top:40px;
+    left:40px;
+    width:80px;
+    height:30px;
+    border-radius:15px;
+    background: #f8f8f8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#474646;
+    box-shadow: 0 0 5px #999;
+}
+.back img{
+    width:12px;
+    margin-right:3px;
+}
+.back:hover.back img{
+    animation: run 1.2s infinite;
+}
+@keyframes run{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.login_bk{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_main{
+    width:620px;
+    height:443px;
+    background:#fff;
+    color: #838282;
+    border-radius:10px;
+    position: relative;
+    box-shadow: 0px 0px 20px #333;
+}
+.login_box{
+    width:409px;
+    height:100%;
+    float:left;
+    position: absolute;
+    transition: all 1s;
+}
+
+.login_tinybox{
+    width:298px;
+    margin: 0 53px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.login_tinybox2{
+    width:298px;
+    margin: 0 53px;
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.login_title{
+    width:100%;
+    height:62px;
+    display:flex;
+    justify-content: center;
+    font-size:34px;
+    font-weight:400;
+    letter-spacing: 5px;
+
+}
+.login_two{
+    width:100%;
+    height:90px;
+    margin-top: 23px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+}
+.user{
+    width:100%;
+    height:28px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#user_id{
+    float: left;
+    width: 205px;
+    height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbbbb;
+    text-indent: 8px;
+}
+#user_psw{
+    float: left;
+    width: 205px;
+    height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbbbb;
+    text-indent: 8px;
+}
+.psw{
+    width:100%;
+    height:28px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.user_word{
+    width: 75px;
+    height: 100%;
+    font-size: 24px;
+    float: left;
+    line-height: 28px;
+    position: relative;
+    text-align: justify;
+    margin-left: 10px;
+}
+.user_word:after {
+    display: inline-block;
+    width: 100%;  
+    content: '';  
+}
+.maohao{
+    position: absolute;
+    width: 5px;
+    font-size: 24px;
+    float: left;
+    line-height: 28px;
+    right: -10px;
+}
+.psw_word{
+    width: 75px;
+    height: 100%;
+    font-size: 24px;
+    float: left;
+    line-height: 28px;
+    text-align: justify;
+    position: relative;
+    margin-left: 10px;
+}
+.psw_word:after {
+    display: inline-block;
+    width: 100%;  
+    content: '';  
+}
+.login_line{
+    width:100%;
+    height:50px;
+    /* margin-top:46px; */
+    margin-top:38px;
+    display:flex;
+    justify-content: center;
+}
+.login_line2{
+    width:100%;
+    height:50px;
+    margin-top:35px;
+    display:flex;
+    justify-content: center;
+}
+#login{
+    cursor: pointer;
+    width: 147px;
+    height: 40px;
+    background: #f6d686;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 17px;
+    padding-left: 17px;
+    font-size: 22px;
+    color: #333;
+    font-family: '仓耳今楷';
+}
+#login:active{
+    background: #fcd36c;
+}
+.login_bottom{
+    width:100%;
+    height:21px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.remember{
+    width:85px;
+    height:100%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.rem_check{
+    width:17px;
+    height:17px;
+    cursor: pointer;
+    position: absolute;
+    left:0;
+}
+
+.rem_word{
+    margin-left:25px;
+    font-size:15px;
+}
+.register_back a{
+    width:120px;
+    height:100%;
+    font-size:14px;
+    color:#838282;
+}
+
+.right_img{
+    width:211px;
+    height:100%;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    float:left;
+    position: absolute;
+    right:0;
+    transition: all ease-in-out 1s;
+}
+.right_img_add{
+    right:409px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    
+}
+.opacity0{
+    opacity: 0;
+}
+.opacity1{
+    opacity: 1 !important;
+}
+.displaynone{
+    display:none;
+}
+.displayblock{
+    display:block !important;
+}
+
+.warn1{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn1 img,.warn2 img,.warn3 img,.warn4 img,.warn5 img,.warn6 img,.warn7 img,.warn8 img,.warn9 img{
+    width:18px;
+    float:left;
+    margin-top: 3px;
+    margin-right:2px;
+}
+.warn1 p{
+    margin-top:5px;
+}
+.warn2{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn2 p{
+    margin-top:5px;
+}
+.warn3{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn3 p{
+    margin-top:5px;
+}
+.warn4{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top: 89px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn4 p{
+    margin-top:5px;
+}
+
+.warn5{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn5 p{
+    margin-top:5px;
+}
+
+.warn6{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn6 p{
+    margin-top:5px;
+}
+
+.warn7{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:27px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn7 p{
+    margin-top:5px;
+}
+.warn8{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top:81px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn8 p{
+    margin-top:5px;
+}
+.warn9{
+    position: absolute;
+    width:120px;
+    height:22px;
+    left:68px;
+    top: 134px;
+    border-radius:8px;
+    font-size:10px;
+    display:none;
+    color:#ff4545;
+}
+.warn9 p{
+    margin-top:5px;
+}
+/*注册界面*/
+.login_box2{
+    width:409px;
+    height:100%;
+    float:left;
+    position: absolute;
+    right:0;
+    display:none;
+    opacity: 0;
+    transition: all 1s;
+}
+.login_three{
+    width:100%;
+    height:135px;
+    margin-top: 15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+}
+#user_id2{
+    float: left;
+    width: 205px;
+    height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbbbb;
+    text-indent: 8px;
+}
+#user_psw2{
+    float: left;
+    width: 205px;
+    height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbbbb;
+    text-indent: 8px;
+}
+#user_again{
+    float: left;
+    width: 205px;
+    height: 24px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbbbb;
+    text-indent: 8px;
+}
+.back_login a{
+    width:120px;
+    font-size:14px;
+    color:#838282;
+    position: absolute;
+    right:0;
+    bottom: 33px;
+}
+.psw_again{
+    width: 100px;
+    height: 100%;
+    font-size: 24px;
+    float: left;
+    line-height: 28px;
+    text-align: justify;
+    position: relative;
+    margin-left: -15px;
+}
+.psw_again:after {
+    display: inline-block;
+    width: 100%;  
+    content: '';  
+}
+#register{
+    cursor: pointer;
+    width: 147px;
+    height: 40px;
+    background: #f6d686;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 17px;
+    padding-left: 17px;
+    font-size: 22px;
+    color: #333;
+    font-family: '仓耳今楷';
+}
+#register:active{
+    background: #fcd36c;
+}
+#scene{
+    width:104%;
+    height:100vh;
+    position: absolute;
+    left:-2%;
+    top:0;
+    z-index:-1;
+}
+.layer{
+    width:100%;
+    height:100%;
+}
+.layer img{
+    width:100%;
+    height:100%;
+}
+.login_touxiang{
+    width:110px;
+    height:110px;
+    border-radius:100%;
+    border:1px solid #bdbbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.touxiang_box{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    overflow: hidden;
+}
+.touxiang_box img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.user_img,.psw_img{
+    width:25px;
+    margin-right:5px;
+}
+.login_biaoyu{
+    width:100%;
+    height:115px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.biaoyu1{
+    width:78%;
+    height:60px;
+    font-size:37px;
+    color:#535353;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.biaoyu2{
+    width:78%;
+    height:20px;
+    font-size:19px;
+    color:#9f9f9f;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}

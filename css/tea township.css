@@ -1,0 +1,1073 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+html{
+    cursor: url(../images/mouse.png),default;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    width: 100vw;
+    margin-right: calc(100vw - 100%);
+    cursor: url(../images/mouse.png),default;
+}
+
+body::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgb(165, 164, 164);
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(218, 214, 214, 1);
+}
+@font-face{
+    font-family: '仓耳今楷';
+    src:url(../fonts/仓耳今楷05\ W05.ttf);
+}
+@font-face{
+    font-family: '汉标精工';
+    src:url(../fonts/汉标榜样毛笔楷体.ttf);
+}
+
+/* .bk{
+    width:100%;
+    height:768px;
+  
+    background-image: url(../images/tea_township/bk.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+} */
+
+.town1{
+    width:100%;
+    height:788px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: url(../images/tea_personal2/white-waves.png);
+}
+.rectangle1{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:-15px;
+    left:45%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title1{
+    position: absolute;
+    width:50px;
+    height:350px;
+    font-size:35px;
+    font-weight:600;
+    display:flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap:wrap;
+    text-align: center;
+    top:110px;
+    left:11%;
+    cursor: default;
+}
+.title1 img,.title1 p{
+    z-index:100;
+}
+@keyframes run{
+    from{
+      transform:rotate(0deg);
+    }
+    to{
+       transform:rotate(360deg);
+    }
+}
+.circle{
+    position: absolute;
+    top:180px;
+    left:0;
+    /* animation:run 5s linear infinite;  */
+}
+.brief{
+    position: absolute;
+    width:420px;
+    height:240px;
+    left:27%;
+    top:130px;
+}
+.brief_title{
+    width:100%;
+    height:45px;
+    font-size:20px;
+    font-weight:600;
+}
+.brief_main{
+    width:100%;
+    height:195px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.pic1{
+    position: absolute;
+    right:-18%;
+    top:150px;
+    transition: all 2s;
+}
+.story{
+    position: absolute;
+    width:380px;
+    height:200px;
+    left:18%;
+    top:375px;
+}
+.story_main{
+    width:100%;
+    height:155px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio1{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 390px;
+    top: 135px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic2{
+    position: absolute;
+    right:8%;
+    top:480px;
+    width:350px;
+    transform: rotate(15deg);
+}
+
+.town2{
+    width:100%;
+    height:960px;
+    background: url(../images/tea_personal2/white-waves.png);
+    position: relative;
+    font-family:'仓耳今楷';
+}
+.rectangle2{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:-15px;
+    left:45%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title2{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    right:12%;
+    cursor: default;
+}
+.title2_img1{
+    position: absolute;
+    right:60px;
+    top:0;
+}
+.title2_img2{
+    margin-top:190px;
+}
+.title2 p{
+    position: absolute;
+}
+.title2 img,.title2 p{
+    z-index:100;
+}
+.pic2-1{
+    position: absolute;
+    left:6%;
+    top:20px;
+}
+.brief2{
+    position: absolute;
+    width:310px;
+    height:190px;
+    left:33%;
+    top:35px;
+}
+.brief2_title{
+    width:100%;
+    height:45px;
+    font-size:20px;
+    font-weight:600;
+}
+.brief2_main{
+    width:100%;
+    height:150px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.brief_part2{
+    position: absolute;
+    left:-150px;
+    top:225px;
+    width:320px;
+    height:150px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.pic2-2{
+    position: absolute;
+    right: 20%;
+    top: 240px;
+}
+.pic2-3{
+    position: absolute;
+    left:5%;
+    top:430px;
+}
+.story2{
+    position: absolute;
+    width:320px;
+    height:200px;
+    left:30%;
+    top:485px;
+}
+.story2_main{
+    width:100%;
+    height:155px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story2_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story2_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story2_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio2{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 330px;
+    top: 115px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic2-4{
+    position: absolute;
+    right:10%;
+    top:650px;
+}
+.way{
+    position: absolute;
+    width:250px;
+    height:150px;
+    left:12%;
+    top:750px;
+}
+.way_main{
+    width:100%;
+    height:105px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.swiper-container {
+    width: 97%;
+    height: 100%;
+}
+.swiper-scrollbar{
+    width:1px !important;
+}
+.town3{
+    width:100%;
+    height:550px;
+    position: relative;
+    font-family:'仓耳今楷';  
+    background: url(../images/tea_personal2/white-waves.png);
+    margin-bottom:400px;
+}
+
+.blank{
+    position: absolute;
+    width:100%;
+    height:768px;
+
+    bottom:0px;
+    background: url(../images/tea_prepare/prepare7.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index:-1000;
+}
+.rectangle3{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:85px;
+    left:25%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title3{
+    position: absolute;
+    width:45px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    left:12%;
+    z-index:100;
+    cursor: default;
+}
+.title3_word{
+    position: absolute;
+    top:100px;
+    left:-20px;
+}
+.title3_img1{
+    position: absolute;
+    right:60px;
+    top:0;
+}
+.title3_img2{
+    position: absolute;
+    top:190px;
+    left:40px;
+}
+.title3 img,.title3 p{
+    z-index:100;
+}
+.brief3{
+    position: absolute;
+    width:500px;
+    height:130px;
+    left:35%;
+    top:125px;
+}
+
+.brief3_main{
+    width:100%;
+    height:90px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.pic3-1{
+    position: absolute;
+    top:320px;
+    left:6%;
+}
+.way2{
+    position: absolute;
+    width:250px;
+    height:150px;
+    left:52%;
+    top:380px;
+}
+.town4{
+    width:100%;
+    height:700px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: #fff;
+}
+.rectangle4{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:185px;
+    left:45%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title4{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    right:12%;
+    cursor: default;
+}
+.title4_img1{
+    margin-bottom:20px;
+}
+.title4 p{
+    position: absolute;
+}
+.title4 img,.title4 p{
+    z-index:100;
+}
+.pic4-1{
+    position: absolute;
+    top:110px;
+    right:22%;
+}
+.brief4{
+    position: absolute;
+    width:350px;
+    height:180px;
+    left:12%;
+    top:145px;
+}
+
+.brief4_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.story4{
+    position: absolute;
+    width:400px;
+    height:260px;
+    left:20%;
+    top:425px;
+}
+.story4_main{
+    width:100%;
+    height:215px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story4_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story4_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story4_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio4{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 410px;
+    top: 200px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic4-2{
+    position: absolute;
+    top:420px;
+    right:16%;
+}
+.town5{
+    width:100%;
+    height:500px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: #fff;
+}
+.rectangle5{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:-15px;
+    left:45%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title5{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    left:10%;
+    top:30px;
+    cursor: default;
+}
+.title5 img{
+    margin-top:185px;
+}
+.title5 p{
+    position: absolute;
+}
+.title5 img,.title5 p{
+    z-index:100;
+}
+.brief5{
+    position: absolute;
+    width:320px;
+    height:180px;
+    left:22%;
+    top:80px;
+}
+
+.brief5_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.story5{
+    position: absolute;
+    width:300px;
+    height:180px;
+    left:28%;
+    top:290px;
+}
+.story5_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story5_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story5_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story5_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio5{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 310px;
+    top: 130px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic5-1{
+    position: absolute;
+    top:90px;
+    right:14%;
+}
+.town6{
+    width:100%;
+    height:970px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: #fff;
+}
+.blank2{
+    position: absolute;
+    width:100%;
+    height:768px;
+    bottom:0px;
+    background: url(../images/tea_prepare/prepare2.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index:-1000;
+}
+.rectangle6{
+    position: absolute;
+    width:30px;
+    height:190px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:-15px;
+    left:45%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title6{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    right:12%;
+    cursor: default;
+}
+.title6_img1{
+    position: absolute;
+    right:70px;
+    top:55px;
+}
+.title6_img2{
+    margin-top:230px;
+}
+.title6 p{
+    position: absolute;
+}
+.title6 img,.title6 p{
+    z-index:100;
+}
+.pic6-1{
+    position: absolute;
+    left:4%;
+    top:100px;
+}
+.brief6{
+    position: absolute;
+    width:300px;
+    height:180px;
+    left:29%;
+    top:115px;
+}
+
+.brief6_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.brief6_part2{
+    position: absolute;
+    left:-100px;
+    top:245px;
+    width:330px;
+    height:150px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.pic6-2{
+    position: absolute;
+    top:280px;
+    right:19%;
+}
+.pic6-3{
+    position: absolute;
+    top:530px;
+    left:4%;
+}
+.story6{
+    position: absolute;
+    width:320px;
+    height:180px;
+    left:32%;
+    top:550px;
+}
+.story6_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story6_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story6_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story6_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio6{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 335px;
+    top: 120px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic6-4{
+    position: absolute;
+    top:740px;
+    right:9%;
+}
+.way6{
+    position: absolute;
+    width:250px;
+    height:150px;
+    left:12%;
+    top:800px;
+}
+.town7{
+    width:100%;
+    height:660px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: #fff;
+    margin-top:400px;
+}
+.rectangle7{
+    position: absolute;
+    width:30px;
+    height:150px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:15px;
+    left:5%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title7{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    left:12%;
+    margin-top:80px;
+    cursor: default;
+}
+.title7_word{
+    position: absolute;
+    left:-20px;
+    top:30px;
+    width:50px;
+}
+.title7_img1{
+    position: absolute;
+    right:70px;
+    top:-80px;
+}
+.title7_img2{
+    position: absolute;
+    top:110px;
+    left:30px;
+}
+.title7 img,.title7 p{
+    z-index:100;
+}
+.brief7{
+    position: absolute;
+    width:540px;
+    height:80px;
+    left:29%;
+    top:125px;
+}
+
+.brief7_main{
+    width:100%;
+    height:35px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.story7{
+    position: absolute;
+    width:320px;
+    height:260px;
+    left:24%;
+    top:330px;
+}
+.story7_main{
+    width:100%;
+    height:215px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story7_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story7_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story7_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio7{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 330px;
+    top: 200px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic7-1{
+    position: absolute;
+    top:380px;
+    right:8%;
+}
+.town8{
+    width:100%;
+    height:1000px;
+    position: relative;
+    font-family:'仓耳今楷';
+    background: #fff;
+}
+.rectangle8{
+    position: absolute;
+    width:30px;
+    height:190px;
+    background-image: linear-gradient(25deg, #3b6d23, #5c9432, #83b949, #a2d65e);
+    top:-15px;
+    left:5%;
+    z-index:1;
+    opacity: 0.8;
+    transition: all .3s;
+}
+.title8{
+    position: absolute;
+    width:50px;
+    height:150px;
+    font-size:35px;
+    font-weight:600;
+    text-align: center;
+    right:12%;
+    margin-top:0px;
+    cursor: default;
+}
+.title8_word{
+    position: absolute;
+    left:-20px;
+    top:0px;
+    width:50px;
+}
+.title8_img1{
+    position: absolute;
+    right:85px;
+    top:40px;
+}
+.title8_img2{
+    position: absolute;
+    top:210px;
+    left:-18px;
+}
+.title8 img,.title8 p{
+    z-index:100;
+}
+.pic8-1{
+    position: absolute;
+    top:10px;
+    left:4%;
+}
+.brief8{
+    position: absolute;
+    width:340px;
+    height:180px;
+    left:32%;
+    top:30px;
+}
+
+.brief8_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.brief8_part2{
+    position: absolute;
+    left:-100px;
+    top:195px;
+    width:330px;
+    height:150px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+}
+.pic8-2{
+    position: absolute;
+    top:240px;
+    right:22%;
+}
+.pic8-3{
+    position: absolute;
+    top:400px;
+    left:5%;
+}
+.story8{
+    position: absolute;
+    width:350px;
+    height:180px;
+    left:32%;
+    top:450px;
+}
+.story8_main{
+    width:100%;
+    height:135px;
+    font-size:18px;
+    line-height:36px;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+}
+.story8_main::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+.story8_main::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.story8_main::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.audio8{
+    position: absolute;
+    width:35px;
+    height:35px;
+    left: 365px;
+    top: 130px;
+    z-index:1000;
+    cursor: pointer;
+}
+.pic8-4{
+    position: absolute;
+    top:680px;
+    right:13%;
+}
+.way8{
+    position: absolute;
+    width:250px;
+    height:150px;
+    left:8%;
+    top:700px;
+}
+.menu_line{
+    position: fixed;
+    right:0;
+    top:15vh;
+    height:80vh;
+    width:70px;
+    z-index:1000000;
+}
+.town_menu{
+    position: absolute;
+    width:70px;
+    height:70px;
+    top:50vh;
+    right:-33px;
+
+}
+.movemenu{
+    position: absolute;
+    width:68px;
+    height:68px;
+    top:0;
+    right:0;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5) -3px 0px 20px;
+    cursor: pointer;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:#00aaaf;
+    font-size:20px;
+    transition: transform .3s;
+    z-index:100000000;
+}
+.pot{
+    width:30px;
+    margin-left:8px;
+    transition: all .3s;
+}
+.menu_title{
+    position: absolute;
+    width:50px;
+    margin-top:-2px;
+    margin-left:-2px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.menu_box{
+    position: absolute;
+    width:65px;
+    height:65px;
+    top:0;
+    right:0;
+    border-radius: 100%;
+    background:rgb(129, 127, 126);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size:15px;
+    z-index:100000;
+    opacity: 0;
+    transition: border .1s;
+    font-family:'仓耳今楷';
+}
+.menu_tinybox{
+    position: absolute;
+    width:55px;
+    height:55px;
+    top:5px;
+    right:5px;
+    border-radius: 100%;
+    background:#221F1C;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height:18px;
+    transition: all .2s;
+}

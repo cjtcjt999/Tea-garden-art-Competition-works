@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+*{margin:0;padding:0;}
+.active_brief{
+    width:450px;
+    height:600px;
+    position: absolute;
+    left:30px;
+    top:15px;
+}
+.brief_logo{
+    position: absolute;
+    top:88px;
+    left:20%;
+    width:70px;
+}
+.act1{
+    position: absolute;
+    top:100px;
+    left:35%;
+    width:200px;
+}
+.act2{
+    /* /* position: absolute; */
+    /* top:260px; 
+    left:10%; */
+    width:200px;
+    margin-left:10%;
+    margin-top:70px;
+}
+.choice{
+    width:100%;
+    display: flex;
+    margin-top:20px;
+}
+.act3{
+    /* /* position: absolute; */
+    /* top:360px; 
+    left:9%; */
+    width:90px;
+    height:55px;
+    margin-left:10%;
+}
+.brief_choice{
+    /* position: absolute; */
+    /* top:360px; */
+    /* left:30%; */
+    width:260px;
+    height:55px;
+    border-bottom:3px solid #000;
+    overflow: hidden;
+}
+.swiper-container{
+    width:100%;
+    height:100%;
+}
+.juzhong{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.juzhong img{
+    width:200px;
+}
+.line1{
+    position: absolute;
+    width:85px;
+    height:3px;
+    top:133px;
+    left:0%;
+    background:#000;
+}
+.line2{
+    position: absolute;
+    width:85px;
+    height:3px;
+    top:133px;
+    right:0%;
+    background:#000;
+}
+.brief_main{
+    width:100%;
+    height:300px;
+    border-radius:10px;
+    background:rgb(230, 250, 235);
+    position: absolute;
+    top:200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+</style>
+<body>
+    <div class="active_brief">
+        <span class="line1"></span><span class="line2"></span>
+        <img class="brief_logo" src="./images/logo_child.png">
+        <img class="act1" src="./images/active_title1.png">
+
+        <div class="brief_main">
+            <img class="act2" src="./images/active_title2.png"><br>
+            <div class="choice">
+                <img class="act3" src="./images/active_title3.png">
+                <div class="brief_choice">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide juzhong"><img src="./images/active1.png"></div>
+                            <div class="swiper-slide juzhong"><img src="./images/active2.png"></div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+</script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/nav2.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/tea personal2.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/nav2.js"></script>
+    <script src="js/tea personal2.js"></script>
+    <title>订单列表</title>
+</head>
+<body>
+    <div class="nav_top">
+		<label class="toggle">
+			<input type="checkbox">
+			<div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<svg>
+					<use xlink:href="#path">
+				</svg>
+				<svg>
+					<use xlink:href="#path">
+				</svg>
+			</div>
+		</label>
+
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+				<path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+			</symbol>
+		</svg>
+		<a class="logo" href="./personal info.html"><img src="./images/logo.png"></a>
+	</div>
+	<div class="menu">
+        <div id="box1"></div>
+        <div id="box2"></div>
+		<ul class="nav">
+			<li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+			<li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+			<li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+			<li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+			<li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+			<li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+			<li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+		</ul>
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="2">
+				<div class="menu_circle">
+					<div class="small_circle"></div>
+					<p class="circle_word">Tea gardening</p>
+				</div>
+			</li>
+		</ul>
+    </div>
+    
+     <div class="side">
+        <div class="user_box">
+            <div class="tx_box">
+               <div class="touxiang">
+                    <div class="touxiang_inner">
+                        <img src="images/game1/touxiang2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="user_name">
+                <p>三秒先生</p>
+            </div>
+            <div class="user_sign">
+                <p>真正的安静,来自于内心。</p>
+            </div>
+        </div>
+        <div class="fs_line">
+            <div class="fs">
+                <p class="gz_data">3</p>关注
+            </div>
+            <div class="fs">
+                <p class="fs_data">5</p>粉丝
+            </div>
+        </div>
+       <ul class="side_menu">
+            <a href="./personal info.html"><li><img src="./images/tea_personal2/icon1.png">个人信息</li><div class="fk"></div></a>
+            <a href="./personal learning.html"><li><img src="./images/tea_personal2/icon3.png">学习进度</li><div class="fk"></div></a>
+            <a href="./personal order.html"style="background:#bae4b8;"><li><img src="./images/tea_personal2/icon2.png">订单列表</li><div class="fk"></div></a>
+            <a href="./personal active.html"><li><img src="./images/tea_personal2/icon6.png">活动中心</li><div class="fk"></div></a>
+            <a href="./personal concern.html"><li><img src="./images/tea_personal2/icon4.png">我的关注</li><div class="fk"></div></a>
+            <a href="./personal like.html"><li><img src="./images/tea_personal2/icon5.png">我的喜欢</li><div class="fk"></div></a>
+        </ul>
+    </div> 
+
+    <div class="personal_all">
+        <div class="personal_top">
+            <div class="prev_time">
+                <span>上次来访</span>
+                <div class="time_data">19-9-24 10:24</div>
+            </div>
+            <div class="user_status">
+                <div class="tx">
+                    <img src="./images/game1/touxiang2.jpg">
+                </div>
+                <div class="user_mz">
+                    三秒先生
+                </div>
+                |
+                <a href="./prepare.html" class="user_quit">
+                    退出
+                </a>
+            </div>
+        </div>
+        <div class="personal_position">
+            <span class="pos_title">我的位置</span>
+            <span class="pos_title2">个人中心<i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            <span class="pos_mypos">订单列表</span>
+        </div>
+        <div class="personal_main">
+            <div class="order_line">
+                <div class="order_img"><img src="./images/tea_mall/goods1-1.jpg"></div>
+                <div class="sp_main">
+                    <div class="sp_title">
+                        醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋
+                    </div>
+                    <div class="sp_detail">
+                        <div class="sp_price">￥158</div>
+                        <div class="sp_time">2019/8/3</div>
+                        <div class="sp_pay">已支付</div>
+                    </div>
+                </div>
+                <img class="delete" src="./images/delete.png">
+            </div>
+            <div class="order_line">
+                <div class="order_img"><img src="./images/tea_mall/goods1-1.jpg"></div>
+                <div class="sp_main">
+                    <div class="sp_title">
+                        醉品朴茶 2019年头采明前龙井 自饮装 100g 买两盒赠手提袋
+                    </div>
+                    <div class="sp_detail">
+                        <div class="sp_price">￥158</div>
+                        <div class="sp_time">2019/8/3</div>
+                        <div class="sp_pay">已支付</div>
+                    </div>
+                </div>
+                <img class="delete" src="./images/delete.png">
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

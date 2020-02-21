@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="css/register.css" rel="stylesheet" type="text/css" >
+    <title>注册</title>
+</head>
+<body>
+    <div class="login_bk">
+        <div class="login_main">
+                <img class="left_img"src="images/login_img2.jpg">
+            <div class="login_box2">
+                <div class="login_tinybox">
+                    <span class="login_title">注册</span>
+                    <div class="login_three">
+                        <div class="user">
+                            <label class="user_word">用户名<span>:</span></label>
+                            <input id="user_id2"type="text"placeholder='请输入账号:'
+                            onblur="this.placeholder='请输入账号:'"
+                             onfocus="this.placeholder=''">
+                             <div class="warn5">
+                                    <p>账号必须大于6位</p>
+                                </div>
+                                <div class="warn6">
+                                    <p>账号必须小于12位</p>
+                                </div>
+                                <div class="warn7">
+                                    <p>账号不允许为空</p>
+                                </div>
+                        </div>
+                        <div class="psw">
+                            <label class="psw_word">密&nbsp&nbsp码<span>:</span></label>
+                            <input id="user_psw2"type="password"placeholder='请输入密码:'
+                            onblur="this.placeholder='请输入密码:'"
+                             onfocus="this.placeholder=''">
+                             <div class="warn8">
+                                    <p>密码不允许为空</p>
+                                </div>
+                        </div>
+                        <div class="psw">
+                            <label class="psw_again">确认密码<span>:</span></label>
+                            <input id="user_again"type="password"placeholder='请再次输入密码:'
+                            onblur="this.placeholder='请再次输入密码:'"
+                             onfocus="this.placeholder=''">
+                             <div class="warn9">
+                                    <p>两次密码不同</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="login_line"><input type="button"id="register"
+                        onclick="panduan2()"value="注册">
+                    </div>
+                    <div class="back_login"><a href="#">返回登录</a></div>
+                </div>
+            </div>
+            
+            <div class="login_box">
+                    <div class="login_tinybox">
+                        <span class="login_title">登录</span>
+                        <div class="login_two">
+                            <div class="user">
+                                <label class="user_word">用户名<span>:</span></label>
+                                <input id="user_id"type="text"placeholder='请输入账号:'
+                                onblur="this.placeholder='请输入账号:'"
+                                 onfocus="this.placeholder=''">
+                                 <div class="warn1">
+                                        <p>账号必须大于6位</p>
+                                    </div>
+                                    <div class="warn2">
+                                        <p>账号必须小于12位</p>
+                                    </div>
+                                    <div class="warn3">
+                                        <p>账号不允许为空</p>
+                                    </div>
+                            </div>
+                            <div class="psw">
+                                <label class="psw_word">密&nbsp&nbsp码<span>:</span></label>
+                                <input id="user_psw"type="password"placeholder='请输入密码:'
+                                onblur="this.placeholder='请输入密码:'"
+                                 onfocus="this.placeholder=''">
+                                 <div class="warn4">
+                                    <p>密码不允许为空</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="login_line"><input type="button"id="login"
+                            onclick="panduan()"value="登录"></div>
+                        <div class="login_bottom">
+                            <div class="remember">
+                                <img class="rem_check"src="images/checkbox1.png">
+                                <span class="rem_word">记住密码</span>
+                            </div>
+                            <div class="register_back"><a href="#">还没有账号，立即注册</a></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    var count=0;
+    $(".rem_check").click(function(){
+        if(count%2==0){
+        $(".rem_check").attr("src","images/checkbox2.png")
+        $(".rem_check").addClass("rem_check_add")
+        }
+        else{
+        $(".rem_check").attr("src","images/checkbox1.png") 
+        $(".rem_check").removeClass("rem_check_add")
+        }
+        count++;
+    })
+
+    $(".back_login").click(function(){
+        $(".login_box2").addClass("opacity0");
+        setTimeout(function(){
+            $(".login_box2").addClass("displaynone");
+        },1000)
+        $(".login_box").addClass("displayblock"); 
+        setTimeout(function(){
+            $(".login_box").addClass("opacity1");
+        },500)
+        $(".left_img").addClass("left_img_add");
+        
+    })
+
+
+    $(".register_back").click(function(){
+        $(".login_box2").css("display","block");
+        setTimeout(function(){
+        $(".login_box2").removeClass("opacity0");
+        },500)
+        $(".login_box").removeClass("opacity1");
+        setTimeout(function(){
+            $(".login_box").removeClass("displayblock"); 
+        },500)
+        $(".left_img").removeClass("left_img_add");          
+    })
+
+     /*登录界面账号密码判断*/
+     var id_text;
+        var id_len;
+        $("#user_id").bind('input propertychange',function () {
+        id_text=($("#user_id").val());
+        id_len=id_text.length;
+        if(id_len<6 && id_len>0){
+            $(".warn1").addClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+           
+        }
+        if(id_len >= 7 && id_len<12){
+            $(".warn1").removeClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+        }
+        if(id_len>12){
+            $(".warn2").addClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+            
+        }
+        if(id_len == 0){
+            $(".warn1").removeClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").addClass("displayblock");
+            
+        }
+    }
+        )
+
+        var psw_text;
+        var psw_len;
+        $("#user_psw").bind('input propertychange',function () {
+        psw_text=($("#user_psw").val());
+        psw_len=psw_text.length;
+        
+        if(psw_len == 0){
+            $(".warn4").addClass("displayblock");
+            
+        }
+        else{
+            $(".warn4").removeClass("displayblock");
+        }
+    }
+        )
+    
+    function panduan(){
+        
+        id_text=($("#user_id").val());
+        id_len=id_text.length;
+        if(id_len<6 && id_len>0){
+            $(".warn1").addClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+            return false;
+        }
+        if(id_len >= 7 && id_len<12){
+            $(".warn1").removeClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+        }
+        if(id_len>12){
+            $(".warn2").addClass("displayblock");
+            $(".warn3").removeClass("displayblock");
+            return false;
+        }
+        if(id_len == 0){
+            $(".warn1").removeClass("displayblock");
+            $(".warn2").removeClass("displayblock");
+            $(".warn3").addClass("displayblock");
+            return false;
+        }
+
+        
+       
+        psw_text=($("#user_psw").val());
+        psw_len=psw_text.length;
+        
+        if(psw_len == 0){
+            $(".warn4").addClass("displayblock");
+            return false;
+        }
+        else{
+            $(".warn4").removeClass("displayblock");
+        }
+        
+    }
+
+
+/*注册界面账号密码判断*/
+        var id_text2;
+        var id_len2;
+        $("#user_id2").bind('input propertychange',function () {
+        id_text2=($("#user_id2").val());
+        id_len2=id_text2.length;
+        if(id_len2<6 && id_len2>0){
+            $(".warn5").addClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+            
+        }
+        if(id_len2 >= 7 && id_len2<12){
+            $(".warn5").removeClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+        }
+        if(id_len2>12){
+            $(".warn6").addClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+            
+        }
+        if(id_len2 == 0){
+            $(".warn5").removeClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").addClass("displayblock");
+            
+        }
+    }
+        )
+
+        var psw_text2;
+        var psw_len2;
+        $("#user_psw2").bind('input propertychange',function () {
+        psw_text2=($("#user_psw2").val());
+        psw_len2=psw_text2.length;
+        
+        if(psw_len2 == 0){
+            $(".warn8").addClass("displayblock");
+           
+        }
+        else{
+            $(".warn8").removeClass("displayblock");
+        }
+    }
+        )
+        var psw_text3;
+        var psw_len3;
+        $("#user_again").bind('input propertychange',function () {
+        psw_text3=($("#user_again").val());
+        psw_len3=psw_text3.length;
+        
+        if(psw_len3 != psw_len2){
+            $(".warn9").addClass("displayblock");
+            
+        }
+        else{
+            $(".warn9").removeClass("displayblock");
+        }
+    }
+        )
+    function panduan2(){
+        
+        id_text2=($("#user_id2").val());
+        id_len2=id_text2.length;
+        if(id_len2<6 && id_len2>0){
+            $(".warn5").addClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+            return false;
+        }
+        if(id_len2 >= 7 && id_len2<12){
+            $(".warn5").removeClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+        }
+        if(id_len2>12){
+            $(".warn6").addClass("displayblock");
+            $(".warn7").removeClass("displayblock");
+            return false;
+        }
+        if(id_len2 == 0){
+            $(".warn5").removeClass("displayblock");
+            $(".warn6").removeClass("displayblock");
+            $(".warn7").addClass("displayblock");
+            
+        }
+
+        
+       
+        psw_text2=($("#user_psw2").val());
+        psw_len2=psw_text2.length;
+        
+        if(psw_len2 == 0){
+            $(".warn8").addClass("displayblock");
+            return false;
+        }
+        else{
+            $(".warn8").removeClass("displayblock");
+        }
+        
+
+        psw_text3=($("#user_again").val());
+        psw_len3=psw_text3.length;
+        
+        if(psw_len3 != psw_len2){
+            $(".warn9").addClass("displayblock");
+            return false;
+        }
+        else{
+            $(".warn9").removeClass("displayblock");
+        }
+    }
+</script>
+</html>

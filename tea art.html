@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tea art.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav2.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/3d.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <title>茶苑文艺</title>
+</head>
+<style>
+.nav_top{  
+  background: none;
+  box-shadow: none;
+}
+.toggle input + div div span:before, .toggle input + div div span:after {
+  background: #fff;
+}
+.toggle input + div svg {
+  stroke: #fff;
+}
+</style>
+<body>
+        
+    <div class="nav_top">
+                <label class="toggle">
+                        <input type="checkbox">
+                        <div>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                            <svg>
+                                <use xlink:href="#path">
+                            </svg>
+                        </div>
+                </label>
+                            
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                            <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                        </symbol>
+                    </svg>
+                <a class="logo" href="./personal info.html"><img src="./images/white logo.png"></a>
+    </div>
+    <div class="menu">
+            <div id="box1"></div>
+            <div id="box2"></div>
+        <ul class="nav">
+            <li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+            <li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+            <li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+            <li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+            <li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+            <li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+            <li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+        </ul>
+        <ul id="scene" class="scene">
+            <li class="layer" data-depth="2">
+                <div class="menu_circle">
+                    <div class="small_circle"></div>
+                    <p class="circle_word">Tea gardening</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="brief">
+  
+        <!-- Swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper swiper-wrapper2">
+   
+    <div class="swiper-slide">
+        <div class="art_mengban">
+        </div>
+      <div class="title" data-swiper-parallax="-130%">
+        <h3>茶 谚 诗 词</h3>
+      </div>
+      <div class="img-box"><img src="images/art_bk2.jpg" style="transform:translateX(0);"></div>
+    </div>
+    <div class="swiper-slide">
+        <div class="art_mengban">
+        </div>
+      <div class="title" data-swiper-parallax="-130%">
+        <h3>茶 与 书 画</h3>
+      </div>
+      <div class="img-box"><img src="images/art_bk4.jpg"></div>
+    </div>
+    
+  </div>
+  <div class="button-prev button"><svg class="qian" xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
+    <g id="arrow-svg-home">
+      <g id="circ" class="cls-1">
+        <circle cx="42" cy="42" r="40" class="cls-4"></circle>
+      </g>
+      <g id="arrow">
+        <path id="arrow-trg" d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z"></path>
+      </g>
+      <path id="line" d="M120,0H0" class="cls-3" ></path>
+    </g>
+    </svg></div>
+  <!--左箭头-->
+  <div class="button-next button"> <svg class="hou" xmlns="http://www.w3.org/2000/svg"  viewBox="0 350 160 90">
+    <g id="arrow-svg-home">
+      <g id="circ" class="cls-1">
+        <circle  cx="42" cy="42" r="40" class="cls-4"></circle>
+      </g>
+      <g id="arrow">
+        <path id="arrow-trg" d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z" class="cls-2"></path>
+      </g>
+      <path id="line" d="M120,0H0" class="cls-3" ></path>
+    </g>
+    </svg></div>
+  <!--右箭头--> 
+</div>
+    </div>
+
+    <div class="tea_art_poel">
+        <div class="art_title"data-wow-offset="100">
+            <p class="picture_title">茶谚诗词</p>
+            <img class="title_back"src="./images/title_img.png">
+            <p class="picture_title2">Tea Proverbs Poetry</p>
+        </div>
+        <div class="poel_back">
+            <div class="tea_poel">
+                <div class="tea_poel_main">
+                    <div class="tea_poel_top">
+                        
+                            <div class="animate-1 top1"data-wow-offset="100">
+                                <div class="tea_poel_top_one">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                        
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti1">
+                                        莫分茶
+                                    </p>
+                                    <p class="poel_author1">
+                                        [宋] · 李清照
+                                    </p>
+                            </div>
+                            <div class="animate-1 top2"data-wow-offset="100">
+                                <div class="tea_poel_top_two">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti2">
+                                        茶杯
+                                    </p>
+                                    <p class="poel_author2">
+                                        现代诗
+                                    </p>
+                            </div>
+                
+                    </div>
+                    <div class="tea_poel_middle">
+                            <div class="animate-1 middle1"data-wow-offset="100">
+                                <div class="tea_poel_middle_one">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti3">
+                                        我与茶
+                                    </p>
+                                    <p class="poel_author3">
+                                        现代诗
+                                    </p>
+                            </div>
+                            <div class="animate-1 middle2"data-wow-offset="100">
+                                <div class="tea_poel_middle_two">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti4">
+                                        五星夜话
+                                    </p>
+                                    <p class="poel_author4">
+                                        林清玄、于丹
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="tea_poel_bottom">
+                        <div class="animate-1 bottom1"data-wow-offset="100">
+                            <div class="tea_poel_bottom_one">
+                                <img class="box_mengban" src="./images/art_mengban.png">
+                            </div>
+                            <div class="biankuang">
+                                </div>
+                            <p class="poel_biaoti5">
+                                采茶
+                            </p>
+                            <p class="poel_author5">
+                                佚名
+                            </p>
+                        </div>
+                        <div class="tea_poel_bottom_right"data-wow-offset="100">
+                            <div class="animate-1 bottom2"data-wow-offset="100">
+                                <div class="tea_poel_bottom_two">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti6">
+                                        幽居初夏
+                                    </p>
+                                    <p class="poel_author6">
+                                        [宋] · 陆游
+                                    </p>
+                            </div>
+                            <div class="animate-1 bottom3"data-wow-offset="100">
+                                <div class="tea_poel_bottom_three">
+                                    <img class="box_mengban" src="./images/art_mengban.png">
+                                </div>
+                                    <div class="biankuang">
+                                    </div>
+                                    <p class="poel_biaoti7">
+                                        送陆鸿渐山人采茶回
+                                    </p>
+                                    <p class="poel_author7">
+                                        [唐] · 皇甫曾
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="poel_contain">
+                    <div class="poel_con">
+                        <div class="poel_show">
+                            <div class="poel_mengban">
+                            <div class="poel_word1">
+                        
+                            </div>
+                            <div class="poel_word2">
+                                
+                            </div>
+                            <div class="poel_word3">
+                    
+                            </div>
+                            <div class="poel_word4">
+                            
+                            </div>
+                            <div class="poel_word5">
+                            
+                            </div>   
+                            <div class="poel_word6">
+                            
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow_left">
+                        <img class="arrow_left_circle" src="./images/arrow_left_circle.png">
+                        <img class="arrow_left_jiantou" src="./images/arrow_left_jiantou.png">
+                    </div>
+                    <div class="arrow_right">
+                        <img class="arrow_right_circle" src="./images/arrow_right_circle.png">
+                        <img class="arrow_right_jiantou" src="./images/arrow_right_jiantou.png">
+                    </div>
+                    <img class="close"src="./images/close.png">
+                </div>
+            </div>
+          
+        </div>
+
+    </div>
+    <div class="blank_mengban"></div>
+
+        <div class="art_title2"data-wow-offset="100">
+                <p class="picture_title">茶与书画</p>
+                <img class="title_back"src="./images/title_img.png">
+                <p class="picture_title2">Calligraphy and Painting</p>
+        </div>
+        <div class="picture_line"data-wow-offset="100">
+        
+            <ul class="picture_sort">
+                <span class="sort_title">茶画分类</span>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">国画</a></li>
+                <li><a href="#">漫画</a></li>
+                <li><a href="#">油画</a></li>
+                <li><a href="#">水彩画</a></li>
+            </ul>
+    
+            <div class="art_change">
+                <a href="#">
+                    <img src="./images/change.png">
+                    换一批
+                </a>
+            </div>
+        </div>
+        <div class="art_contain"data-wow-offset="100"data-wow-duration="1s">
+            
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/1/hjylt.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed" >
+                                <div class="heart "  rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/1/hmt.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed">
+                                <div class="heart" rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/1/hscht.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed">
+                                <div class="heart"rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/1/hxzyyt.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed">
+                                <div class="heart" rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/1/lqpct.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed">
+                                <div class="heart"rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art_box">
+                <div class="box_blank">
+                    <img class="box_image"src="images/tea_picture/2/fzk3.jpg">
+                    <div class="blank_main">
+                        <div class="blank_container">
+                            <img class="picture_close" src="./images/picture_close.png">
+                            <div class="blank_title">
+                                <p class="blank_titleword">斗茶图</p>
+                             
+                                <p class="blank_author"><img class="author_line"src="./images/across_line.png">武维金</p>
+                            </div>
+                            <img class="blank_back1" src="./images/blank_back1.png">
+                            <div class="blank_brief">
+                                <p>《斗茶图》中国元代武维金作。描写中国元代斗茶的情形。斗茶兴起于中国唐代，成为“茗战”，宋朝称作“斗茶”，是一种民风民俗。参与者烹制、品评茶叶品质，比较茶艺的高下。图中四位斗茶手分成两组，每组二人。左边斗茶组组长，左手持茶杯，右手持茶壶，昂头望对方，助手在一旁，右手提茶壶，左手持茶杯，两手拉开距离，正在注汤冲茶。</p>
+                            </div>
+                            <div class="feed">
+                                <div class="heart"rel="like"></div> <div class="likeCount" id="likeCount1">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+  
+        <div class="up"><img src="images/up.png"><span class="up_word">返回顶部</span></div>
+        <div class="footer"style="margin-top:100px;">
+                <img class="footer_bk" src="./images/green_cup.png">
+                <div class="footer_title">
+                    关于我们
+                </div>
+                    <div class="hi-icon-wrap hi-icon-effect-8">
+                        <a href="#set-8" class="hi-icon"><div class="hi"><img class="footer_img1" src="./images/footer1.png"><p>茶乡</p></div></a>
+                        <a href="#set-8" class="hi-icon"><div class="hi"><img class="footer_img2" src="./images/footer2.png"><p>论坛</p></div></a>
+                        <a href="#set-8" class="hi-icon"><div class="hi"><img class="footer_img3" src="./images/footer3.png"><p>教学</p></div></a>
+                        <a href="#set-8" class="hi-icon"><div class="hi"><img class="footer_img4" src="./images/footer4.png"><p>商城</p></div></a>
+                    </div>
+                <div class="footer_about">
+                    Copyright 2019 茶园拾艺 All Rights Reserved.
+                </div>
+            </div>
+
+</body>
+
+<script>
+    //转载请标注版权 Swiper中文网 www.swiper.com.cn
+    lock = false;
+	bgColor = ["rgb(179, 189, 196)","rgb(180, 183, 166)","rgb(140, 152, 187)"]; //背景色
+    var mySwiper = new Swiper('.swiper-container',{
+		   speed: 1300,
+		   allowTouchMove: false,//禁止触摸滑动
+		   parallax : true,  //文字位移视差
+		   on:{
+		     transitionStart: function(){
+				 lock = true;//锁住按钮
+			 	 slides = this.slides
+				 imgBox = slides.eq(this.previousIndex).find('.img-box') //图片包装器
+				 imgPrev = slides.eq(this.previousIndex).find('img')  //当前图片
+				 imgActive = slides.eq(this.activeIndex).find('img')  //下一张图片
+				 derection = this.activeIndex-this.previousIndex
+				 this.$el.css("background-color",bgColor[this.activeIndex]);//背景颜色动画
+				 
+                 imgBox.transform('matrix(0.6, 0, 0, 0.6, 0, 0)');
+				 imgPrev.transition(1000).transform('matrix(1.2, 0, 0, 1.2, 0, 0)');//图片缩放视差
+				 this.slides.eq(this.previousIndex).find('h3').transition(1000).css('color','rgba(255,255,255,0)');//文字透明动画
+				 
+				 imgPrev.transitionEnd(function () {
+				   imgActive.transition(1300).transform('translate3d(0, 0, 0) matrix(1.2, 0, 0, 1.2, 0, 0)');//图片位移视差
+                   imgPrev.transition(1300).transform('translate3d('+60*derection+'%, 0, 0)  matrix(1.2, 0, 0, 1.2, 0, 0)');
+                 });
+             },
+			 transitionEnd: function(){
+                 this.slides.eq(this.activeIndex).find('.img-box').transform(' matrix(1, 0, 0, 1, 0, 0)');
+				 imgActive = this.slides.eq(this.activeIndex).find('img')
+				 imgActive.transition(1000).transform(' matrix(1, 0, 0, 1, 0, 0)');
+				 this.slides.eq(this.activeIndex).find('h3').transition(1000).css('color','rgba(255,255,255,1)');
+				 
+				 imgActive.transitionEnd(function () {
+				   lock = false
+                 });
+				 //第一个和最后一个，禁止按钮
+				 if(this.activeIndex == 0){
+					 this.$el.find('.button-prev').addClass('disabled');
+				 }else{
+					 this.$el.find('.button-prev').removeClass('disabled');
+				 }
+				 
+				 if(this.activeIndex == this.slides.length - 1){
+					 this.$el.find('.button-next').addClass('disabled');
+				 }else{
+					 this.$el.find('.button-next').removeClass('disabled');
+				 }
+             },
+			 init:function(){
+				 this.emit('transitionEnd');//在初始化时触发一次transitionEnd事件
+		  	 },
+		  
+		  }
+		});
+		
+	//不使用自带的按钮组件，使用lock控制按钮锁定时间
+	mySwiper.$el.find('.button-next').on('click',function(){
+		  if(!lock){
+		    mySwiper.slideNext();
+		  }
+		})
+	mySwiper.$el.find('.button-prev').on('click',function(){
+		  if(!lock){
+		    mySwiper.slidePrev();
+		  }
+		})	
+  </script>
+<script>        
+     
+</script>
+    <script>
+        new WOW().init();
+        $(".top1").addClass("wow slideInUp");
+        $(".top2").addClass("wow slideInUp");
+        $(".middle1").addClass("wow slideInUp");
+        $(".middle2").addClass("wow slideInUp");
+        $(".bottom1").addClass("wow slideInUp");
+        $(".bottom2").addClass("wow slideInUp");
+        $(".bottom3").addClass("wow slideInUp");
+        $(".art_title").addClass("wow fadeIn");
+        $(".art_title2").addClass("wow fadeIn");
+        $(".picture_line").addClass("wow fadeInUp");
+        $(".art_contain").addClass("wow zoomIn");
+    </script>
+
+ <script src="js/art.js"></script>
+<script>
+    var cishu=0;var flag=true;
+
+    $(".button-next").click(function(){/*顶部轮播选择板块按钮*/
+    if(flag){
+        flag=false;
+        cishu++;
+        if(cishu==1){
+            new WOW().init();
+            console.log(cishu);
+            $(".tea_art_poel").css("display","none");
+            $(".art_title2,.picture_line,.art_contain").css("display","flex");
+        }
+    }
+        setTimeout(function(){
+            flag=true;
+        },3000)
+    })
+    $(".button-prev").click(function(){/*顶部轮播选择板块按钮*/
+    if(flag){
+        flag=false;
+        cishu--;
+        if(cishu==0){
+            console.log(cishu);
+            $(".tea_art_poel").css("display","block");
+            $(".art_title2,.picture_line,.art_contain").css("display","none");
+        }
+    }
+        setTimeout(function(){
+            flag=true;
+        },3000)
+    }) 
+
+    $(".up").click(function(){
+        $("html,body").animate({scrollTop:0},600);
+    })
+    $(window).scroll(function(){
+        var dist=$(window).scrollTop();
+        if(dist<=500){
+            $(".up").css("right","-46px");
+        }
+        if(dist>500){
+            $(".up").css("right","4px");
+        }
+    })
+
+   
+</script>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/wangEditor.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/nav2.css">
+	<link rel="stylesheet" href="css/forum.css" />
+	<link rel="stylesheet" href="css/sweet-alert.css" />
+	<link rel="stylesheet" href="css/dialog.css" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="./js/nav2.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wangEditor.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/cursor.js"></script>
+	<script src="js/jquery.dialog.min.js"></script>
+	<script src="js/sweet-alert.js"></script>
+</head>
+
+<body>
+	<div class="nav_top">
+		<label class="toggle">
+			<input type="checkbox">
+			<div>
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+				<svg>
+					<use xlink:href="#path">
+				</svg>
+				<svg>
+					<use xlink:href="#path">
+				</svg>
+			</div>
+		</label>
+
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+				<path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+			</symbol>
+		</svg>
+		<a class="logo" href="./personal info.html"><img src="./images/logo.png"></a>
+	</div>
+	<div class="menu">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<ul class="nav">
+			<li><a class="link link--kumya" href="./index.html"><span data-letters="首页">首页</span></a></li>
+			<li><a class="link link--kumya" href="./tea township.html"><span data-letters="八大茶乡">八大茶乡</span></a></li>
+			<li><a class="link link--kumya" href="./tea art.html"><span data-letters="茶苑文艺">茶苑文艺</span></a></li>
+			<li><a class="link link--kumya" href="./teach-prepare.html"><span data-letters="茶艺教学">茶艺教学</span></a></li>
+			<li><a class="link link--kumya" href="./tea mall.html"><span data-letters="茶楼酒肆">茶楼酒肆</span></a></li>
+			<li><a class="link link--kumya" href="./tea forum.html"><span data-letters="茶坛逸事">茶坛逸事</span></a></li>
+			<li><a class="link link--kumya" href="./personal info.html"><span data-letters="个人中心">个人中心</span></a></li>
+		</ul>
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="2">
+				<div class="menu_circle">
+					<div class="small_circle"></div>
+					<p class="circle_word">Tea gardening</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="bk"></div>
+	<div class="big_box">
+		<div class="forum_main_talk">
+
+			<div class="wangeditor">
+				<div id="divDemo">
+					<p class="paluer">发布你的内容</p>
+				</div>
+				<div class="content_submit_box">
+					<ul>
+						<li class="classify_tuijian content_submit_ul_li">推荐</li>
+						<li class="classify_dongtai">动态</li>
+					</ul>
+					<button class="content_submit" id="content_submit_btn">发布</button>
+				</div>
+				<ul class="topic">
+					<li>想用什么话题？</li>
+					<li>茶之道</li>
+					<li>如何买好茶？</li>
+					<li>为何许多人喜欢绿茶？</li>
+					<li>人每天喝多少茶为宜？</li>
+					<li>水质对泡茶有影响吗？</li>
+					<li>什么茶具泡茶最好？</li>
+				</ul>
+			</div>
+			<div id="commoent">
+				<div class="forum_main" id="@msg.ID" data-wow-offset="20">
+					<div class="main_top @user.ID ">
+						<img src="./images/try1.jpg" />
+						<div class="forum_guanzhu">
+							<img src="./images/icon/guanzhu_success.png">
+						</div>
+						<div class="main_name">User_ID</div>
+						<div class="main_leve">茶小白</div>
+						<div class="screen_box_del">
+							<img class="confirm" src="./images/icon/lajitong1.png" />
+						</div>
+					</div>
+					<div class="forum_content">内容</div>
+					<div class="forum_state">
+						<div>
+							<span>
+								<i>1</i>
+								赞
+							</span>
+							<span>
+								<i>1</i>
+								评论
+							</span>
+						</div>
+						<span class="forum_state_time">2019/1/1</span>
+					</div>
+
+					<div class="forum_icon_all">
+						<div class="forum_icon">
+							<img class="forum_icon_zan" src="./images/icon/zan.png" />
+							<img class="forum_icon_pinglun" src="./images/icon/comment.png" />
+						</div>
+						<div class="forum_shared">
+							<a class="forum_shard_qq"
+								href="http://connect.qq.com/widget/shareqq/index.html?title=qq好友&url=http://172.18.2.9/S2019-Tea&desc=茶园拾艺"
+								target="_blank"> <img src="./images/icon/qq.png" /></a>
+							<a class="forum_shard_weixin"
+								href="http://qr.topscan.com/api.php?text==http://172.18.2.9/S2019-Tea"
+								target="_blank"><img src="./images/icon/wechat.png"
+									style="width: 28px;height: 27px;margin-bottom: -2px;" /></a>
+							<a class="forum_shard_weibo"
+								href="http://v.t.sina.com.cn/share/share.php?url==http://172.18.2.9/S2019-Tea&title=茶园拾艺"
+								target="_blank"><img src="./images/icon/weibo.png" /></a>
+						</div>
+					</div>
+
+					<div class="forum_CommentListV2">
+						<div class="CommentItemV2">
+							<input type="text" class="CommentItemV2-input-text" placeholder="请输入内容..." />
+							<button class="CommentItemV2-input-submit">回复</button>
+						</div>
+
+						<ul class="NestComment">
+
+							<li class="NestComment-rootCommentNoChild" id="@rep.ID">
+								<div class="CommentItemV2">
+									<div class="CommentItemV2-meta">
+
+										<img src="./images/try1.jpg" />
+										<span>User_ID</span>
+
+									</div>
+
+									<div class="screen_box_commoent_del">
+										<img class="confirm" src="./images/icon/lajitong1.png" />
+									</div>
+
+
+								</div>
+								<div class="CommentItemV2-metaSibling">
+									<div class="RichText ztext">
+										@rep.Replys
+									</div>
+									<div class="CommentItemV2-footer">
+										<div class="CommentItemV2-footer-main">
+											<div class="CommentItemV2-footer-zan">
+
+
+
+												<span>赞</span><span><img class="CommentItemV2-footer-dianzan"
+														src="./images/icon/dianzan.png" /></span>
+
+
+											</div>
+											<div class="CommentItemV2-footer-huifu">
+												<span>回复</span>
+												<span><img src="./images/icon/pinglun.png" /></span>
+											</div>
+										</div>
+										<div class="CommentItemV2-meta-time">2019/1/4</div>
+									</div>
+									<div class="replytoreply_box" style="display:none">
+										<div class="CommentItemV2 message_reply">
+											<input type="text" class="CommentItemV2-input-text"
+												placeholder="请输入内容..." />
+											<button class="CommentItemV2-input-submit-chlid">回复</button>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="my_forum">
+			<div class="signin">
+						<div class="sign_top">
+							<div class="sign_circle"></div>
+							<div class="sign_circle"></div>
+						</div>
+						<div class="sign_line">
+							<div class="sign_button">
+								<img src="./images/signup.png">立即签到
+							</div>
+						</div>
+						<div class="sign_info">
+							<div class="con_signin">
+								<div class="signin_word">
+									连续签到
+								</div>
+								<div class="consign">
+									<p class="consign_data">5</p>天
+								</div>
+							</div>
+							<span></span>
+							<div class="con_signin">
+								<div class="signin_word">
+									本月签到
+								</div>
+								<div class="consign">
+									<p class="month_data">12</p>天
+								</div>
+							</div>
+							<span></span>
+							<div class="con_signin">
+								<div class="signin_word">
+									总签到
+								</div>
+								<div class="consign">
+									<p class="all_data">45</p>天
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="forum_myinformation">
+				<div class="forum_myinformation_head">
+					<img class="forum_myinformation_head_url" src="./images/try1.jpg" />
+					<div class="header_right">
+						<p class="header_name">User_ID</p>
+						<p class="header_qm">一杯茶，品人生沉浮</p>
+					</div>
+
+				</div>
+				<div class="forum_myinformation_detailed">
+
+					<div class="personal_box">
+						<p class="line_box1">关注</p>
+						<p class="line_box2">1</p>
+					</div>
+					<span></span>
+					<div class="personal_box">
+						<p class="line_box1">粉丝</p>
+
+						<p class="line_box2">1</p>
+
+					</div>
+					<span></span>
+					<div class="personal_box">
+						<p class="line_box1">评论</p>
+						<p class="line_box2">1</p>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="forum_hotlabel">
+				<div class="forum_hotlabel_head">热门话题</div>
+				<div class="forum_hotlabel_body">
+					<ul class="forum_hotlabel_body_ul">
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/chazhidao.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											茶之道
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/maihaocha.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											如何买好茶？
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/lvcha.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											为何许多人喜欢绿茶？
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/heduoshaocha.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											人每天喝多少茶为宜？
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/shuizhi.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											水质对泡茶有影响吗？
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+
+							</a>
+						</li>
+						<li>
+							<a>
+								<div class="huati_box">
+									<img src="./images/icon/chahu.jpg">
+									<div class="huati_word">
+										<p class="huati_title">
+											什么茶具泡茶最好？
+										</p>
+										<p class="huati_contain">
+											<span class="gznum">1</span>&nbsp讨论
+										</p>
+									</div>
+								</div>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="spinner-box">
+		<div class="pulse-container">
+			<div class="pulse-bubble pulse-bubble-1"></div>
+			<div class="pulse-bubble pulse-bubble-2"></div>
+			<div class="pulse-bubble pulse-bubble-3"></div>
+		</div>
+	</div>
+
+	<div class="goTop" id="js-go_top"><img src="./images/icon/fanhuidingbu.png" alt="回到顶部图片"></div>
+
+
+</body>
+<script type="text/javascript">
+	var E = window.wangEditor
+	var editor = new E('#divDemo')
+	editor.customConfig.uploadImgShowBase64 = true
+	editor.customConfig.menus = [
+		'head', // 标题
+
+		'bold', // 粗体
+
+		'fontSize', // 字号
+
+		// 'fontName',  // 字体
+
+		// 'italic',  // 斜体
+
+		// 'underline',  // 下划线
+
+		// 'strikeThrough',  // 删除线
+
+		'foreColor', // 文字颜色
+
+		// 'backColor',  // 背景颜色
+
+		//'list', // 列表
+
+		'justify', // 对齐方式
+
+		// 'quote',  // 引用
+
+		'emoticon', // 表情
+
+		'image', // 插入图片
+
+		// 'table',  // 表格
+
+		'undo', // 撤销
+
+		'redo' // 重复
+
+	];
+	editor.create()
+</script>
+
+<script>
+	fleg = 2;
+	fleg_zan = 2;
+	fleg_reply = 2;
+	fleg_dianzan = 2;
+
+	$(document).on('click', '.forum_icon_pinglun', function () {
+		$(this).parent().parent().next().slideToggle()
+	})
+	$('.forum_icon_zan').click(function () {
+		if (fleg_zan % 2 == 0) {
+			/* $(".forum_CommentListV2").css("display","block") */
+			$(this).attr("src", "./images/icon/zan.png")
+			fleg_zan++;
+		} else {
+			$(this).attr("src", "./images/icon/dianzan.png")
+			fleg_zan++;
+		}
+	})
+	$(document).on('click', '.CommentItemV2-footer-huifu', function () {
+
+		$(this).parent().parent().next().slideToggle();
+
+	})
+	$('.CommentItemV2-footer-dianzan').click(function () {
+		if (fleg_dianzan % 2 == 0) {
+			/* $(".forum_CommentListV2").css("display","block") */
+			$(this).attr("src", "./images/icon/zan.png")
+			fleg_dianzan++;
+		} else {
+			$(this).attr("src", "./images/icon/dianzan.png")
+			fleg_dianzan++;
+		}
+	})
+	$('#divDemo').click(function () {
+		$('.paluer').css("display", "none")
+	})
+
+</script>
+<script>
+	$("#divDemo").keydown(function () {
+		$(".paluer").hide();
+	});
+
+</script>
+<script>
+	$("#gz1").click(function () {
+		$("#gz1 img").attr("src", "./images/icon/guanzhu_success.png");
+		$("#gz1").css("opacity", "0");
+		setTimeout(function () {
+			$("#gz1").css("display", "none")
+		}, 2000)
+	})
+	$("#gz2").click(function () {
+		$("#gz2 img").attr("src", "./images/icon/guanzhu_success.png");
+		$("#gz2").css("opacity", "0");
+		setTimeout(function () {
+			$("#gz1").css("display", "none")
+		}, 2000)
+	})
+	$(document).on("mouseenter", ".forum_shard_qq", function () {
+		$(this).children().attr("src", "./images/icon/hoverqq.png");
+	});
+	$(document).on("mouseleave", ".forum_shard_qq", function () {
+		$(this).children().attr("src", "./images/icon/qq.png");
+	});
+	$(document).on("mouseenter", ".forum_shard_weixin", function () {
+		$(this).children().attr("src", "./images/icon/hoverweixin.png");
+	});
+	$(document).on("mouseleave", ".forum_shard_weixin", function () {
+		$(this).children().attr("src", "./images/icon/wechat.png");
+	});
+	$(document).on("mouseenter", ".forum_shard_weibo", function () {
+		$(this).children().attr("src", "./images/icon/hoverweibo2.png");
+	});
+	$(document).on("mouseleave", ".forum_shard_weibo", function () {
+		$(this).children().attr("src", "./images/icon/weibo.png");
+	});
+	$(document).on("mouseenter", ".screen_box_del img", function () {
+		$(this).attr("src", "./images/icon/lajitong2.png");
+	});
+	$(document).on("mouseleave", ".screen_box_del img", function () {
+		$(this).attr("src", "./images/icon/lajitong1.png");
+	});
+	$(document).on("mouseenter", ".screen_box_commoent_del img", function () {
+		$(this).attr("src", "./images/icon/lajitong2.png");
+	});
+	$(document).on("mouseleave", ".screen_box_commoent_del img", function () {
+		$(this).attr("src", "./images/icon/lajitong1.png");
+	});
+	//监听发布信息是否为空
+	setInterval(function () {
+		var divNew = $(".w-e-text").html();
+		if (divNew == '<p class="paluer">发布你的内容</p><p><br></p>' || divNew == '<p><br></p>' || divNew == '<p><br></p><p><br></p>' || divNew == '<p><br></p><p><br></p><p><br></p>' || divNew == '<p><br></p><p><br></p><p><br></p><p><br></p>' || divNew == '<p class="paluer"><br></p><p><br></p>') {
+			$('#content_submit_btn').css({ 'background': '#cce5ff', 'cursor': 'not-allowed' })
+
+		}
+		else {
+			$('#content_submit_btn').css({ 'background': '#027fff', 'cursor': 'pointer' })
+		}
+		//console.log(divNew)
+		//console.log('<p class="paluer">发布你的内容</p><p><br></p>')
+
+	}, 100);
+	//#号跳出列表
+	$("#divDemo").keydown(function () {
+		$(".paluer").remove();
+	});
+	$("#divDemo").keyup(function (e) {
+		//console.log(e.keyCode);
+		if (e.keyCode == 51) {
+			$(".topic").css("display", "flex");
+		}
+	});
+	$("#divDemo").keydown(function (e) {
+		//console.log(e.keyCode);
+		if (e.shiftKey && e.which == 51) {
+			$(".topic").css("display", "flex");
+		}
+		else {
+			$(".topic").css("display", "none");
+		}
+		if (e.which == 32) {
+			$(".topic").css("display", "none");
+		}
+	});
+	$(".topic li").not(".topic li:nth-child(1)").click(function () {
+		$(".topic").css("display", "none");
+		$('.w-e-text p').text("");
+		$('.w-e-text p').append('<span style="color:rgb(249, 150, 59);">#' + $(this).text() + '#</span><span style="color:rgb(0, 0, 0);">&nbsp</span>');
+	});
+	new WOW().init();
+
+
+
+	function alert_follow_success() {
+		$.sendSuccessToTop('关注成功', 500, function () {
+		});
+	};
+	function alert_cancelfollow_success() {
+		$.sendSuccessToTop('取消关注成功', 500, function () {
+		});
+	};
+</script>
+
+<script>
+	//发布帖子
+
+	$('#content_submit_btn').click(function () {
+		var content = editor.txt.html();
+
+		if (content == '<p class="paluer">发布你的内容</p><p><br></p>' || content == '<p><br></p>' || content == '<p><br></p><p><br></p>') {
+
+		}
+		else {
+
+
+			leve = "茶师";
+			userin = "也许";
+			alert_fabu_success();
+			$('#commoent').prepend('<div class="forum_main animated bounceIn" id="' +
+				1 + '" data-wow-offset="20"><div class="main_top ' +
+				userin + '"><img src="./images/try1.jpg" /><div class="main_name">' +
+				userin + '</div ><div class="main_leve">' +
+				leve + '</div><div class="screen_box_del"><img class="confirm" src="./images/icon/lajitong1.png" /></div></div><div class="forum_content">' +
+				content + '</div><div class="forum_state"><div><span><i>' +
+				0 + '</i>赞</span><span><i>1</i>评论</span></div><span class="forum_state_time">' +
+				2019 / 1 / 1 + '</span ></div><div class="forum_icon_all"><div class="forum_icon"><img class="forum_icon_zan" src="./images/icon/dianzan.png" /><img class="forum_icon_pinglun" src="./images/icon/comment.png" /></div><div class="forum_shared"><a class="forum_shard_qq" href="http://connect.qq.com/widget/shareqq/index.html?title=qq好友&url=http://172.18.2.9/S2019-Tea&desc=茶园拾艺" target="_blank"> <img src="./images/icon/qq.png" /></a><a class="forum_shard_weixin" href="http://qr.topscan.com/api.php?text==http://172.18.2.9/S2019-Tea"target="_blank"><img src="./images/icon/wechat.png" style="width: 28px;height: 27px;margin-bottom: -2px;" /></a><a class="forum_shard_weibo" href="http://v.t.sina.com.cn/share/share.php?url==http://172.18.2.9/S2019-Tea&title=茶园拾艺" target="_blank"><img src="./images/icon/weibo.png" /></a></div></div><div class="forum_CommentListV2"><div class="CommentItemV2"><input type="text" class="CommentItemV2-input-text" placeholder="请输入内容..." /><button class="CommentItemV2-input-submit">回复</button></div><ul class="NestComment"></ul></div></div>')
+
+			$('.w-e-text').html("<p><br></p>")
+			var pinglunnum = $('.personal_box').eq(2).children('.line_box2').text() - 0 + 1;
+			$('.personal_box').eq(2).children('.line_box2').text(pinglunnum);
+
+
+
+
+
+		}
+	});
+	var check = 0;
+	$(document).on('click', 'alert_talk_check li:nth-child(1)', function () {
+		check = 1;
+	});
+
+
+	//删除帖子
+	$(document).on('click', '.screen_box_del img', function () {
+		var leavemessid = $(this).parent().parent().parent('.forum_main').attr("id");
+
+		swal({
+
+			title: "确定要删除此茶谈吗？",
+
+			text: "",
+
+			type: "warning",
+
+			showCancelButton: true,
+
+			confirmButtonColor: '#DD6B55',
+
+			confirmButtonText: '确定',
+			cancelButtonText: '取消',
+
+			closeOnConfirm: false,
+
+			//closeOnCancel: false,
+		},
+			function () {
+				swal("删除成功!", "", "success");
+
+				var pinglunnum = $('.forum_myinformation_detailed').children().eq(4).children(".line_box2").text() - 0 - 1;
+				$('.forum_myinformation_detailed').children().eq(4).children(".line_box2").text(pinglunnum);
+				$('#' + leavemessid).addClass("animated bounceOut")
+				setTimeout(function () {
+					$('#' + leavemessid).remove();
+				}, 1000)
+
+
+			});
+
+
+
+
+	});
+
+
+	//回复楼主
+	$(document).on("click", ".CommentItemV2-input-submit", function () {
+
+		if ($(this).prev().val() == "") {
+			alert_empty_error()
+		}
+		else {
+
+			var users = "也许";
+			var repy = "2019/1/4";
+			var usersss = "./images/try1.jpg"
+
+			$(this).parent().next('.NestComment').prepend('<li class="NestComment-rootCommentNoChild animated bounceIn" id="1561"><div class="CommentItemV2"><div class="CommentItemV2-meta"><img src="' +
+				usersss + '" /><span>' + users + '</span></div><div class="screen_box_commoent_del"><img class="confirm" src="./images/icon/lajitong1.png" /></div></div><div class="CommentItemV2-metaSibling"><div class="RichText ztext">' +
+				$(this).prev().val() + '</div><div class="CommentItemV2-footer"><div class="CommentItemV2-footer-main"><div class="CommentItemV2-footer-zan"><span>赞</span><span><img class="CommentItemV2-footer-dianzan" src="./images/icon/dianzan.png" /></span></div><div class="CommentItemV2-footer-huifu"><span>回复</span><span><img src="./images/icon/pinglun.png" /></span></div></div><div class="CommentItemV2-meta-time">' +
+				repy + '</div ></div><div class="replytoreply_box" style="display:none"><div class="CommentItemV2 message_reply"><input type="text" class="CommentItemV2-input-text" placeholder="请输入内容..." /><button class="CommentItemV2-input-submit-chlid">回复</button></div></div></div></li>');
+			alert_huifu_success();
+			$(this).prev().val("");
+
+
+		}
+
+	});
+	//回复评论
+	$(document).on("click", ".CommentItemV2-input-submit-chlid", function () {
+		var tieziname = $(this).parent().parent().parent().prev().children().children("span").text();
+		var tiezinames = "回复@" + tieziname + ":";
+		if ($(this).prev().val() == tiezinames) {
+			alert_empty_error()
+		}
+		else {
+			users = "yexu";
+			repy = "11";
+			
+			var usersss = "./images/try1.jpg"
+			$(this).parent().parent().parent().parent().after('<li class="NestComment-rootCommentNoChild animated bounceIn" id="' + repy + '"><div class="CommentItemV2"><div class="CommentItemV2-meta"><img src="' +
+				usersss + '" /><span>' + users + '</span></div><div class="screen_box_commoent_del"><img class="confirm" src="./images/icon/lajitong1.png" /></div></div><div class="CommentItemV2-metaSibling"><div class="RichText ztext">' +
+				$(this).prev().val() + '</div><div class="CommentItemV2-footer"><div class="CommentItemV2-footer-main"><div class="CommentItemV2-footer-zan"><span>赞</span><span><img class="CommentItemV2-footer-dianzan" src="./images/icon/dianzan.png" /></span></div><div class="CommentItemV2-footer-huifu"><span>回复</span><span><img src="./images/icon/pinglun.png" /></span></div></div><div class="CommentItemV2-meta-time">' +
+				repy + '</div ></div><div class="replytoreply_box" style="display:none"><div class="CommentItemV2 message_reply"><input type="text" class="CommentItemV2-input-text" placeholder="请输入内容..." /><button class="CommentItemV2-input-submit-chlid">回复</button></div></div></div></li>');
+			alert_huifu_success();
+			$(this).prev().val("");
+			$(this).parent().parent().slideToggle();
+
+
+		}
+
+	});
+	//删除评论
+	$(document).on("click", ".screen_box_commoent_del img", function () {
+		var replyid = $(this).parent().parent().parent('li').attr("id");
+		$(this).parent().parent().parent('li').addClass("comment_redlydel");
+		swal({
+
+			title: "确定要删除此评论吗？",
+
+			text: "",
+
+			type: "warning",
+
+			showCancelButton: true,
+
+			confirmButtonColor: '#DD6B55',
+
+			confirmButtonText: '确定',
+			cancelButtonText: '取消',
+
+			closeOnConfirm: false,
+
+			//closeOnCancel: false,
+		},
+			function () {
+				swal("删除成功!", "", "success");
+
+				$('.comment_redlydel').parent().parent().prev().prev().children().children().eq(1).children("i").text(1);
+				$('.comment_redlydel').addClass("animated bounceOut");
+				setTimeout(function () {
+					$('.comment_redlydel').remove();
+				}, 1000);
+
+			});
+
+
+
+	});
+	function alert_fabu_success() {
+		$.sendSuccessToTop('发布成功', 500, function () {
+		})
+	};
+	function alert_shanchu_success() {
+		$.sendSuccessToTop('删除成功', 500, function () {
+		})
+	};
+	function alert_empty_error() {
+		$.sendWarningToTop('内容不能为空！', 500, function () {
+		})
+	};
+	function alert_huifu_success() {
+		$.sendSuccessToTop('评论成功', 500, function () {
+		})
+	};
+</script>
+
+</html>
